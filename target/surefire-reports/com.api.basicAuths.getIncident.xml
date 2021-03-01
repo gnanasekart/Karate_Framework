@@ -1,0 +1,29 @@
+<testsuite failures="1" name="com/api/basicAuths/getIncident.feature" skipped="0" tests="1" time="2.39086">
+  <testcase classname="com.api.basicAuths.getIncident" name="User login into service" time="2.39086">
+    <failure message="getIncident.feature:29 - path: $.result[0].priority, actual: '4', expected: '#? _ == 3', reason: did not evaluate to 'true'">Given url 'https://dev68166.service-now.com' .............................. passed
+And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='} . passed
+Given path '/api/now/v1/table/incident' ................................... passed
+And param sysparm_fields = 'number, sys_id, priority, short_description, sys_class_name' . passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response.result[0] .............................................. passed
+And def sysid = response.result[0].sys_id ................................. passed
+And match response == '#notnull' .......................................... passed
+And def length = response.result.length ................................... passed
+And match response.result == '#array' ..................................... passed
+And match response.result[0].number == '#string' .......................... passed
+And match response.result[0].sys_id == '#string' .......................... passed
+And match response.result[0].short_description == '#string' ............... passed
+And match response.result[0].priority == '#string' ........................ passed
+And match response.result[0].sys_class_name == '#string' .................. passed
+And match response.result[0].priority == '#? _ == 3' ...................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getIncident.feature:29 - path: $.result[0].priority, actual: '4', expected: '#? _ == 3', reason: did not evaluate to 'true'&#13;
+	at ✽.And match response.result[0].priority == '#? _ == 3' (getIncident.feature:29)&#13;
+
+And match response.result[0].short_description == '#string? _.length &gt;= 1' . skipped
+And match response.result == '#[]' ........................................ skipped
+And match response == ..................................................... skipped</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,14 @@
+<testsuite failures="0" name="com/api/basicAuths/putIncident.feature" skipped="0" tests="1" time="4.76069">
+  <testcase classname="com.api.basicAuths.putIncident" name="User login into service" time="4.76069">
+    <system-out>Given url 'https://dev68166.service-now.com' .............................. passed
+And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='} . passed
+* def getresponse = call read("classpath:com/api/automation_resource/getIncident_Request.feature") {_url: 'https://dev68166.service-now.com', _path: '/api/now/v1/table/incident', _sysparam: 'number, sys_id, priority, short_description, sys_class_name'} . passed
+* def sysid = getresponse.response.result[0].sys_id ....................... passed
+* print "sysid = "+sysid .................................................. passed
+Given path '/api/now/v1/table/incident/',sysid ............................ passed
+And request { "short_description": "seku short desc" } .................... passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

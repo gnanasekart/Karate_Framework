@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>com.api.automation.getIncident</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-23 04:08:04 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:7]">[1:7] User login into service </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">com/api/automation/getIncident.feature</span><span class="feature-description">User get the incident details</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">User login into service </span>
+</div>
+<div class="scenario-time passed">ms: 5028</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">Given url 'https://dev68166.service-now.com'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="1">16:07:59.009 karate.env system property was:</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">Given path '/api/now/v1/table/incident'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">And param sysparm_fields = 'number, sys_id'</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">4966</div>
+</div>
+<div class="preformatted" data-parent="5">16:08:01.178 request:
+1 &gt; GET https://dev68166.service-now.com/api/now/v1/table/incident?sysparm_fields=number%2C+sys_id
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:08:04.085 response time in milliseconds: 2748.08
+1 &lt; 200
+1 &lt; Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Tue, 23 Feb 2021 10:42:44 GMT
+1 &lt; Expires: 0
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=9708B103494F95A931548FBC3C521D20; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Sun, 13-Mar-2089 13:56:51 GMT; Path=/; HttpOnly;Secure, glide_session_store=D017A7F02F22201028A057492799B6F4; Max-Age=1800; Expires=Tue, 23-Feb-2021 11:12:44 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Total-Count: 67
+1 &lt; X-Transaction-ID: 1817a7f02f22
+{"result":[{"number":"INC0000060","sys_id":"1c741bd70b2322007518478d83673af3"},{"number":"INC0009002","sys_id":"1c832706732023002728660c4cf6a7b9"},{"number":"INC0000009","sys_id":"46b66a40a9fe198101f243dfbc79033d"},{"number":"INC0000010","sys_id":"46b9490da9fe1981003c938dab89bda3"},{"number":"INC0000011","sys_id":"46c03489a9fe19810148cd5b8cbf501e"},{"number":"INC0000012","sys_id":"46c88ac1a9fe1981014de1c831fbcf6d"},{"number":"INC0000013","sys_id":"46cebb88a9fe198101aee93734f9768b"},{"number":"INC0000014","sys_id":"46e18c0fa9fe19810066a0083f76bd56"},{"number":"INC0000021","sys_id":"46ee0924a9fe198100f1cf78c198454a"},{"number":"INC0000024","sys_id":"46ee8c2fa9fe198100623592c70d643e"},{"number":"INC0000026","sys_id":"46f1784ba9fe19810018aa27fbb23482"},{"number":"INC0000028","sys_id":"46f3ee0ea9fe198100c5c0e53d5abe0b"},{"number":"INC0000030","sys_id":"46f6ede0a9fe198100e10154c34a0c2a"},{"number":"INC0000032","sys_id":"47079b68a9fe198100a614a4c225c88d"},{"number":"INC0000033","sys_id":"470af5afa9fe198101b324dd773ef379"},{"number":"INC0000034","sys_id":"470d51a0a9fe1981006c20c825e48933"},{"number":"INC0000035","sys_id":"47138238a9fe1981016e3762d1fd26d4"},{"number":"INC0000036","sys_id":"4714a2aca9fe198100ecabacf6273482"},{"number":"INC0000038","sys_id":"4717dfe5a9fe198100450448b2404c16"},{"number":"INC0000006","sys_id":"8d6246c7c0a80164012fb063cecd4ace"},{"number":"INC0000008","sys_id":"8d641046c0a80164000bc7c0d3ed46a0"},{"number":"INC0000001","sys_id":"9c573169c611228700193229fff72400"},{"number":"INC0000004","sys_id":"9d3c1197c611228701cd1d94bc32d76d"},{"number":"INC0000601","sys_id":"9e7f9864532023004247ddeeff7b121f"},{"number":"INC0009003","sys_id":"9fffc328731823002728660c4cf6a742"},{"number":"INC0009004","sys_id":"e329de99731423002728660c4cf6a73c"},{"number":"INC0000005","sys_id":"e8e875b0c0a80164009dc852b4d677d5"},{"number":"INC0010003","sys_id":"197b57b82fe2201028a057492799b6b2"},{"number":"INC0000015","sys_id":"46e2fee9a9fe19810049b49dee0daf58"},{"number":"INC0000016","sys_id":"46e3e949a9fe19810069b824ba2c761a"},{"number":"INC0000017","sys_id":"46e482d9a9fe198101d3e3f3e2a14459"},{"number":"INC0000018","sys_id":"46e57642a9fe1981000b96a5dca501ff"},{"number":"INC0000019","sys_id":"46e8219ba9fe1981013806b6e04fed06"},{"number":"INC0000020","sys_id":"46edaa6aa9fe198101b9d14ced16619f"},{"number":"INC0000025","sys_id":"46f09e75a9fe198100f4ffd8d366d17b"},{"number":"INC0000027","sys_id":"46f4f4dfa9fe198100063e60278f76ec"},{"number":"INC0000029","sys_id":"46f67787a9fe198101e06dfcf3a78e99"},{"number":"INC0000031","sys_id":"47064b68a9fe19810186793eefffc9b7"},{"number":"INC0000037","sys_id":"4715ab62a9fe1981018c3efb96143495"},{"number":"INC0000039","sys_id":"471bfbc7a9fe198101e77a3e10e5d47f"},{"number":"INC0000040","sys_id":"471d4732a9fe198100affbf655e59172"},{"number":"INC0000041","sys_id":"471eb058a9fe198100f89592e1ea93d3"},{"number":"INC0000044","sys_id":"47204688a9fe1981011a20af100f381a"},{"number":"INC0010112","sys_id":"552c48888c033300964f4932b03eb092"},{"number":"INC0009009","sys_id":"57af7aec73d423002728660c4cf6a71c"},{"number":"INC0000057","sys_id":"78271e1347c12200e0ef563dbb9a7109"},{"number":"INC0000059","sys_id":"85071a1347c12200e0ef563dbb9a71c1"},{"number":"INC0000007","sys_id":"8d6353eac0a8016400d8a125ca14fc1f"},{"number":"INC0000058","sys_id":"965c9e5347c12200e0ef563dbb9a7156"},{"number":"INC0000002","sys_id":"9d385017c611228701d22104cc95c371"},{"number":"INC0001990","sys_id":"a2496c05731110107418660c4cf6a711"},{"number":"INC0009001","sys_id":"a623cdb073a023002728660c4cf6a768"},{"number":"INC0010111","sys_id":"a83820b58f723300e7e16c7827bdeed2"},{"number":"INC0000047","sys_id":"a9a16740c61122760004fe9095b7ddca"},{"number":"INC0000046","sys_id":"a9e30c7dc61122760116894de7bcc7bd"},{"number":"INC0000048","sys_id":"a9e428cac61122760075710592216c58"},{"number":"INC0000051","sys_id":"d7158da0c0a8016700eef46c8d1f3661"},{"number":"INC0000052","sys_id":"d7195138c0a8016700fd68449cfcd484"},{"number":"INC0000053","sys_id":"d71b3b41c0a8016700a8ef040791e72a"},{"number":"INC0000054","sys_id":"d71da88ac0a801670061eabfe4b28f77"},{"number":"INC0000055","sys_id":"d71f7935c0a8016700802b64c67c11c6"},{"number":"INC0000003","sys_id":"e8caedcbc0a80164017df472f39eaed1"},{"number":"INC0009005","sys_id":"ed92e8d173d023002728660c4cf6a7bc"},{"number":"INC0000049","sys_id":"ef4225a40a0a0b5700d0b8a790747812"},{"number":"INC0000050","sys_id":"ef43c6d40a0a0b5700c77f9bf387afe3"},{"number":"INC0007001","sys_id":"f12ca184735123002728660c4cf6a7ef"},{"number":"INC0007002","sys_id":"ff4c21c4735123002728660c4cf6a758"}]}</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And match response == '#notnull'</div>
+</div>
+<div class="time-cell passed">22</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">18</div>
+</div>
+<div class="preformatted" data-parent="8">16:08:04.142 [print] {
+  "result": [
+    {
+      "number": "INC0000060",
+      "sys_id": "1c741bd70b2322007518478d83673af3"
+    },
+    {
+      "number": "INC0009002",
+      "sys_id": "1c832706732023002728660c4cf6a7b9"
+    },
+    {
+      "number": "INC0000009",
+      "sys_id": "46b66a40a9fe198101f243dfbc79033d"
+    },
+    {
+      "number": "INC0000010",
+      "sys_id": "46b9490da9fe1981003c938dab89bda3"
+    },
+    {
+      "number": "INC0000011",
+      "sys_id": "46c03489a9fe19810148cd5b8cbf501e"
+    },
+    {
+      "number": "INC0000012",
+      "sys_id": "46c88ac1a9fe1981014de1c831fbcf6d"
+    },
+    {
+      "number": "INC0000013",
+      "sys_id": "46cebb88a9fe198101aee93734f9768b"
+    },
+    {
+      "number": "INC0000014",
+      "sys_id": "46e18c0fa9fe19810066a0083f76bd56"
+    },
+    {
+      "number": "INC0000021",
+      "sys_id": "46ee0924a9fe198100f1cf78c198454a"
+    },
+    {
+      "number": "INC0000024",
+      "sys_id": "46ee8c2fa9fe198100623592c70d643e"
+    },
+    {
+      "number": "INC0000026",
+      "sys_id": "46f1784ba9fe19810018aa27fbb23482"
+    },
+    {
+      "number": "INC0000028",
+      "sys_id": "46f3ee0ea9fe198100c5c0e53d5abe0b"
+    },
+    {
+      "number": "INC0000030",
+      "sys_id": "46f6ede0a9fe198100e10154c34a0c2a"
+    },
+    {
+      "number": "INC0000032",
+      "sys_id": "47079b68a9fe198100a614a4c225c88d"
+    },
+    {
+      "number": "INC0000033",
+      "sys_id": "470af5afa9fe198101b324dd773ef379"
+    },
+    {
+      "number": "INC0000034",
+      "sys_id": "470d51a0a9fe1981006c20c825e48933"
+    },
+    {
+      "number": "INC0000035",
+      "sys_id": "47138238a9fe1981016e3762d1fd26d4"
+    },
+    {
+      "number": "INC0000036",
+      "sys_id": "4714a2aca9fe198100ecabacf6273482"
+    },
+    {
+      "number": "INC0000038",
+      "sys_id": "4717dfe5a9fe198100450448b2404c16"
+    },
+    {
+      "number": "INC0000006",
+      "sys_id": "8d6246c7c0a80164012fb063cecd4ace"
+    },
+    {
+      "number": "INC0000008",
+      "sys_id": "8d641046c0a80164000bc7c0d3ed46a0"
+    },
+    {
+      "number": "INC0000001",
+      "sys_id": "9c573169c611228700193229fff72400"
+    },
+    {
+      "number": "INC0000004",
+      "sys_id": "9d3c1197c611228701cd1d94bc32d76d"
+    },
+    {
+      "number": "INC0000601",
+      "sys_id": "9e7f9864532023004247ddeeff7b121f"
+    },
+    {
+      "number": "INC0009003",
+      "sys_id": "9fffc328731823002728660c4cf6a742"
+    },
+    {
+      "number": "INC0009004",
+      "sys_id": "e329de99731423002728660c4cf6a73c"
+    },
+    {
+      "number": "INC0000005",
+      "sys_id": "e8e875b0c0a80164009dc852b4d677d5"
+    },
+    {
+      "number": "INC0010003",
+      "sys_id": "197b57b82fe2201028a057492799b6b2"
+    },
+    {
+      "number": "INC0000015",
+      "sys_id": "46e2fee9a9fe19810049b49dee0daf58"
+    },
+    {
+      "number": "INC0000016",
+      "sys_id": "46e3e949a9fe19810069b824ba2c761a"
+    },
+    {
+      "number": "INC0000017",
+      "sys_id": "46e482d9a9fe198101d3e3f3e2a14459"
+    },
+    {
+      "number": "INC0000018",
+      "sys_id": "46e57642a9fe1981000b96a5dca501ff"
+    },
+    {
+      "number": "INC0000019",
+      "sys_id": "46e8219ba9fe1981013806b6e04fed06"
+    },
+    {
+      "number": "INC0000020",
+      "sys_id": "46edaa6aa9fe198101b9d14ced16619f"
+    },
+    {
+      "number": "INC0000025",
+      "sys_id": "46f09e75a9fe198100f4ffd8d366d17b"
+    },
+    {
+      "number": "INC0000027",
+      "sys_id": "46f4f4dfa9fe198100063e60278f76ec"
+    },
+    {
+      "number": "INC0000029",
+      "sys_id": "46f67787a9fe198101e06dfcf3a78e99"
+    },
+    {
+      "number": "INC0000031",
+      "sys_id": "47064b68a9fe19810186793eefffc9b7"
+    },
+    {
+      "number": "INC0000037",
+      "sys_id": "4715ab62a9fe1981018c3efb96143495"
+    },
+    {
+      "number": "INC0000039",
+      "sys_id": "471bfbc7a9fe198101e77a3e10e5d47f"
+    },
+    {
+      "number": "INC0000040",
+      "sys_id": "471d4732a9fe198100affbf655e59172"
+    },
+    {
+      "number": "INC0000041",
+      "sys_id": "471eb058a9fe198100f89592e1ea93d3"
+    },
+    {
+      "number": "INC0000044",
+      "sys_id": "47204688a9fe1981011a20af100f381a"
+    },
+    {
+      "number": "INC0010112",
+      "sys_id": "552c48888c033300964f4932b03eb092"
+    },
+    {
+      "number": "INC0009009",
+      "sys_id": "57af7aec73d423002728660c4cf6a71c"
+    },
+    {
+      "number": "INC0000057",
+      "sys_id": "78271e1347c12200e0ef563dbb9a7109"
+    },
+    {
+      "number": "INC0000059",
+      "sys_id": "85071a1347c12200e0ef563dbb9a71c1"
+    },
+    {
+      "number": "INC0000007",
+      "sys_id": "8d6353eac0a8016400d8a125ca14fc1f"
+    },
+    {
+      "number": "INC0000058",
+      "sys_id": "965c9e5347c12200e0ef563dbb9a7156"
+    },
+    {
+      "number": "INC0000002",
+      "sys_id": "9d385017c611228701d22104cc95c371"
+    },
+    {
+      "number": "INC0001990",
+      "sys_id": "a2496c05731110107418660c4cf6a711"
+    },
+    {
+      "number": "INC0009001",
+      "sys_id": "a623cdb073a023002728660c4cf6a768"
+    },
+    {
+      "number": "INC0010111",
+      "sys_id": "a83820b58f723300e7e16c7827bdeed2"
+    },
+    {
+      "number": "INC0000047",
+      "sys_id": "a9a16740c61122760004fe9095b7ddca"
+    },
+    {
+      "number": "INC0000046",
+      "sys_id": "a9e30c7dc61122760116894de7bcc7bd"
+    },
+    {
+      "number": "INC0000048",
+      "sys_id": "a9e428cac61122760075710592216c58"
+    },
+    {
+      "number": "INC0000051",
+      "sys_id": "d7158da0c0a8016700eef46c8d1f3661"
+    },
+    {
+      "number": "INC0000052",
+      "sys_id": "d7195138c0a8016700fd68449cfcd484"
+    },
+    {
+      "number": "INC0000053",
+      "sys_id": "d71b3b41c0a8016700a8ef040791e72a"
+    },
+    {
+      "number": "INC0000054",
+      "sys_id": "d71da88ac0a801670061eabfe4b28f77"
+    },
+    {
+      "number": "INC0000055",
+      "sys_id": "d71f7935c0a8016700802b64c67c11c6"
+    },
+    {
+      "number": "INC0000003",
+      "sys_id": "e8caedcbc0a80164017df472f39eaed1"
+    },
+    {
+      "number": "INC0009005",
+      "sys_id": "ed92e8d173d023002728660c4cf6a7bc"
+    },
+    {
+      "number": "INC0000049",
+      "sys_id": "ef4225a40a0a0b5700d0b8a790747812"
+    },
+    {
+      "number": "INC0000050",
+      "sys_id": "ef43c6d40a0a0b5700c77f9bf387afe3"
+    },
+    {
+      "number": "INC0007001",
+      "sys_id": "f12ca184735123002728660c4cf6a7ef"
+    },
+    {
+      "number": "INC0007002",
+      "sys_id": "ff4c21c4735123002728660c4cf6a758"
+    }
+  ]
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<testsuite failures="0" name="com/api/basicAuths/JavaScriptExect.feature" skipped="0" tests="1" time="0.007992">
+  <testcase classname="com.api.basicAuths.JavaScriptExect" name="Execute JS function" time="0.007992">
+    <system-out>Given def getInt = function() {return 10; } ............................... passed
+Then print "function value = ", getInt() .................................. passed
+And def getRandom = function() {return Math.floor((100) * Math.random()); } . passed
+Then print "function value = ", getRandom() ............................... passed
+And def getString = function() {return "Hello "+arg1; } ................... passed
+Then print "function value = ", getString("hello") ........................ passed</system-out>
+  </testcase>
+</testsuite>

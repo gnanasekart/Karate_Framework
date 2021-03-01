@@ -1,0 +1,13 @@
+<testsuite failures="0" name="com/api/basicAuths/getIncident_Jsonpath.feature" skipped="0" tests="1" time="2.329476">
+  <testcase classname="com.api.basicAuths.getIncident_Jsonpath" name="User login into service" time="2.329476">
+    <system-out>Given url 'https://dev68166.service-now.com' .............................. passed
+And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='} . passed
+Given path '/api/now/v1/table/incident' ................................... passed
+And param sysparm_fields = 'number, sys_id, priority, short_description, sys_class_name' . passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#notnull' .......................................... passed
+And def priority = karate.jsonPath(response, "$..[?(@.priority==4)].sys_id") . passed
+And print priority ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

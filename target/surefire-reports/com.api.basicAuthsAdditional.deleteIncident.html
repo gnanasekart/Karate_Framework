@@ -1,0 +1,3059 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>com.api.basicAuthsAdditional.deleteIncident</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">2</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-25 08:56:34 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:12]">[1:12] User delete the created item </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:20]">[2:20] User login into service </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">com/api/basicAuthsAdditional/deleteIncident.feature</span><span class="feature-description">User get the incident details</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:12]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:12]</span><span class="scenario-name">User delete the created item </span>
+</div>
+<div class="scenario-time passed">ms: 15372</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:12]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def getresponse = call read("patchIncident.feature") {_url: 'https://dev68166.service-now.com', _path: '/api/now/v1/table/incident/', _sd: 'my new update from delete method'}</div>
+</div>
+<div class="time-cell passed">13245</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="1.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">com/api/basicAuthsAdditional/patchIncident.feature</div>
+</div>
+<div class="time-cell passed">13203</div>
+</div>
+<div class="callarg-container" data-parent="1.1">
+<div class="step-ref"> 
+</div>
+<div class="preformatted">{
+  "_url": "https://dev68166.service-now.com",
+  "_path": "/api/now/v1/table/incident/",
+  "_sd": "my new update from delete method"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url _url</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="preformatted" data-parent="2">20:56:09.526 karate.env system property was:</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def getresponse = call read("postIncident.feature") {_url: 'https://dev68166.service-now.com', _path: '/api/now/v1/table/incident', _callerid: 'thomes', _assignto: 'myself'}</div>
+</div>
+<div class="time-cell passed">10986</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="4.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">com/api/basicAuthsAdditional/postIncident.feature</div>
+</div>
+<div class="time-cell passed">10941</div>
+</div>
+<div class="callarg-container" data-parent="4.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "_url": "https://dev68166.service-now.com",
+  "_path": "/api/now/v1/table/incident",
+  "_callerid": "thomes",
+  "_assignto": "myself"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url _url</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path _path</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def ranvalue = function() {return Math.floor((100) * Math.random()); }</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">37</div>
+</div>
+<div class="preformatted" data-parent="9">{
+"short_description":"Test incident creation through REST",
+"comments":"These are my comments",
+"description": "this text from data sheet",
+"state": '#(ranvalue())',
+"category": "software",
+"contact_type": "email",
+"caller_id": '#(_callerid)',
+"assigned_to": '#(_assignto)',
+"work_notes": "home work",
+"comments_and_work_notes": "Solved (Permanently)"  
+}</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">8071</div>
+</div>
+<div class="preformatted" data-parent="10">20:56:11.281 request:
+1 &gt; POST https://dev68166.service-now.com/api/now/v1/table/incident
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 312
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"short_description":"Test incident creation through REST","comments":"These are my comments","description":"this text from data sheet","state":46.0,"category":"software","contact_type":"email","caller_id":"thomes","assigned_to":"myself","work_notes":"home work","comments_and_work_notes":"Solved (Permanently)"}
+
+20:56:17.852 response time in milliseconds: 6178.45
+1 &lt; 201
+1 &lt; Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Thu, 25 Feb 2021 15:31:01 GMT
+1 &lt; Expires: 0
+1 &lt; Location: https://dev68166.service-now.com/api/now/v1/table/incident/623cfea52f66201028a057492799b63d
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=196A0B3807130FC6BF32FE3946012188; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:07 GMT; Path=/; HttpOnly;Secure, glide_session_store=2A3CFA212F22201028A057492799B6C5; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:00 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Transaction-ID: 6e3cfa212f22
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2021-02-25 15:31:00","child_incidents":"0","hold_reason":"","task_effective_number":"INC0010058","approval_history":"","number":"INC0010058","resolved_by":"","sys_updated_by":"admin","opened_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441","value":"6816f79cc0a8016401c5a33be04be441"},"user_input":"","sys_created_on":"2021-02-25 15:31:00","sys_domain":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global","value":"global"},"state":"2","route_reason":"","sys_created_by":"admin","knowledge":"false","order":"","calendar_stc":"","closed_at":"","cmdb_ci":"","delivery_plan":"","contract":"","impact":"3","active":"true","work_notes_list":"","business_service":"","priority":"5","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2021-02-25 15:31:00","business_duration":"","group_list":"","work_end":"","caller_id":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/thomes","value":"thomes"},"reopened_time":"","resolved_at":"","approval_set":"","subcategory":"","work_notes":"","universal_request":"","short_description":"Test incident creation through REST","close_code":"","correlation_display":"","delivery_task":"","work_start":"","assignment_group":"","additional_assignee_list":"","business_stc":"","description":"this text from data sheet","calendar_duration":"","close_notes":"","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":"","follow_up":"","parent_incident":"","sys_id":"623cfea52f66201028a057492799b63d","contact_type":"email","reopened_by":"","incident_state":"2","urgency":"3","problem_id":"","company":"","reassignment_count":"0","activity_due":"","assigned_to":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/myself","value":"myself"},"severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"0","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"software"}}</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="12">20:56:17.866 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2021-02-25 15:31:00",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "task_effective_number": "INC0010058",
+    "approval_history": "",
+    "number": "INC0010058",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2021-02-25 15:31:00",
+    "sys_domain": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "2",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2021-02-25 15:31:00",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/thomes",
+      "value": "thomes"
+    },
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "Test incident creation through REST",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "description": "this text from data sheet",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "623cfea52f66201028a057492799b63d",
+    "contact_type": "email",
+    "reopened_by": "",
+    "incident_state": "2",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/myself",
+      "value": "myself"
+    },
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "0",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "software"
+  }
+}</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="13">
+<div class="step-ref bg-step">13</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == '#notnull'</div>
+</div>
+<div class="time-cell passed">22</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="14">
+<div class="step-ref bg-step">14</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response.result.assigned_to.value == "myself"</div>
+</div>
+<div class="time-cell passed">15</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="15">
+<div class="step-ref bg-step">15</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url _url</div>
+</div>
+<div class="time-cell passed">27</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="16">
+<div class="step-ref bg-step">16</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path _path</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="18">
+<div class="step-ref bg-step">18</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def body = read("classpath:com/api/basicAuths/data/signup.json")</div>
+</div>
+<div class="time-cell passed">67</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="19">
+<div class="step-ref bg-step">19</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request body</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">2664</div>
+</div>
+<div class="preformatted" data-parent="20">20:56:18.023 request:
+1 &gt; POST https://dev68166.service-now.com/api/now/v1/table/incident
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 308
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"short_description":"Test incident creation through REST","comments":"These are my comments","description":"this text from data sheet","state":"1","category":"software","contact_type":"email","caller_id":"sekar","assigned_to":"gopi","work_notes":"home work","comments_and_work_notes":"Solved (Permanently)"}
+
+20:56:20.677 response time in milliseconds: 2066.45
+1 &lt; 201
+1 &lt; Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Thu, 25 Feb 2021 15:31:03 GMT
+1 &lt; Expires: 0
+1 &lt; Location: https://dev68166.service-now.com/api/now/v1/table/incident/933cfea52f66201028a057492799b66e
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=AFB2ED272DDFC524A9F8E0CD8475F286; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:10 GMT; Path=/; HttpOnly;Secure, glide_session_store=1B3CFA212F62201028A057492799B6E8; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:03 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Transaction-ID: 5f3cfa212f62
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2021-02-25 15:31:03","child_incidents":"0","hold_reason":"","task_effective_number":"INC0010059","approval_history":"","number":"INC0010059","resolved_by":"","sys_updated_by":"admin","opened_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441","value":"6816f79cc0a8016401c5a33be04be441"},"user_input":"","sys_created_on":"2021-02-25 15:31:03","sys_domain":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global","value":"global"},"state":"2","route_reason":"","sys_created_by":"admin","knowledge":"false","order":"","calendar_stc":"","closed_at":"","cmdb_ci":"","delivery_plan":"","contract":"","impact":"3","active":"true","work_notes_list":"","business_service":"","priority":"5","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2021-02-25 15:31:03","business_duration":"","group_list":"","work_end":"","caller_id":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar","value":"sekar"},"reopened_time":"","resolved_at":"","approval_set":"","subcategory":"","work_notes":"","universal_request":"","short_description":"Test incident creation through REST","close_code":"","correlation_display":"","delivery_task":"","work_start":"","assignment_group":"","additional_assignee_list":"","business_stc":"","description":"this text from data sheet","calendar_duration":"","close_notes":"","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":"","follow_up":"","parent_incident":"","sys_id":"933cfea52f66201028a057492799b66e","contact_type":"email","reopened_by":"","incident_state":"2","urgency":"3","problem_id":"","company":"","reassignment_count":"0","activity_due":"","assigned_to":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi","value":"gopi"},"severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"0","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"software"}}</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="21">
+<div class="step-ref bg-step">21</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="22">
+<div class="step-ref bg-step">22</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="22">20:56:20.679 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2021-02-25 15:31:03",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "task_effective_number": "INC0010059",
+    "approval_history": "",
+    "number": "INC0010059",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2021-02-25 15:31:03",
+    "sys_domain": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "2",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2021-02-25 15:31:03",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar",
+      "value": "sekar"
+    },
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "Test incident creation through REST",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "description": "this text from data sheet",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "933cfea52f66201028a057492799b66e",
+    "contact_type": "email",
+    "reopened_by": "",
+    "incident_state": "2",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi",
+      "value": "gopi"
+    },
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "0",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "software"
+  }
+}</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="23">
+<div class="step-ref bg-step">23</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == '#notnull'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="24">
+<div class="step-ref bg-step">24</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response.result.category == "software"</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="25">
+<div class="step-ref bg-step">25</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def sysid = getresponse.response.result.sys_id</div>
+</div>
+<div class="time-cell passed">14</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="26">
+<div class="step-ref bg-step">26</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def shortdesp = getresponse.response.result.short_description</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="27">
+<div class="step-ref bg-step">27</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print "short_description = "+shortdesp</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="27">20:56:20.708 [print] short_description = Test incident creation through REST</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="28">
+<div class="step-ref bg-step">28</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print "sysid = "+sysid</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="28">20:56:20.713 [print] sysid = 933cfea52f66201028a057492799b66e</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="29">
+<div class="step-ref bg-step">29</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path _path,sysid</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="30">
+<div class="step-ref bg-step">30</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request { "short_description": '#(_sd)'}</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="31">
+<div class="step-ref bg-step">31</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method patch</div>
+</div>
+<div class="time-cell passed">2172</div>
+</div>
+<div class="preformatted" data-parent="31">20:56:20.720 request:
+1 &gt; PATCH https://dev68166.service-now.com/api/now/v1/table/incident/933cfea52f66201028a057492799b66e
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 56
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"short_description":"my new update from delete method"}
+
+20:56:22.889 response time in milliseconds: 1814.18
+1 &lt; 200
+1 &lt; Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Thu, 25 Feb 2021 15:31:06 GMT
+1 &lt; Expires: 0
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=FB097240D087DE6D7E6543C87596331B; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:13 GMT; Path=/; HttpOnly;Secure, glide_session_store=B33C366D2F62201028A057492799B66A; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:06 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Transaction-ID: f73c366d2f62
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2021-02-25 15:31:06","child_incidents":"0","hold_reason":"","task_effective_number":"INC0010059","approval_history":"","number":"INC0010059","resolved_by":"","sys_updated_by":"admin","opened_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441","value":"6816f79cc0a8016401c5a33be04be441"},"user_input":"","sys_created_on":"2021-02-25 15:31:03","sys_domain":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global","value":"global"},"state":"2","route_reason":"","sys_created_by":"admin","knowledge":"false","order":"","calendar_stc":"","closed_at":"","cmdb_ci":"","delivery_plan":"","contract":"","impact":"3","active":"true","work_notes_list":"","business_service":"","priority":"5","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2021-02-25 15:31:03","business_duration":"","group_list":"","work_end":"","caller_id":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar","value":"sekar"},"reopened_time":"","resolved_at":"","approval_set":"","subcategory":"","work_notes":"","universal_request":"","short_description":"my new update from delete method","close_code":"","correlation_display":"","delivery_task":"","work_start":"","assignment_group":"","additional_assignee_list":"","business_stc":"","description":"this text from data sheet","calendar_duration":"","close_notes":"","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":"","follow_up":"","parent_incident":"","sys_id":"933cfea52f66201028a057492799b66e","contact_type":"email","reopened_by":"","incident_state":"2","urgency":"3","problem_id":"","company":"","reassignment_count":"0","activity_due":"","assigned_to":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi","value":"gopi"},"severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"1","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"software"}}</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="32">
+<div class="step-ref bg-step">32</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="33">
+<div class="step-ref bg-step">33</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="33">20:56:22.894 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2021-02-25 15:31:06",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "task_effective_number": "INC0010059",
+    "approval_history": "",
+    "number": "INC0010059",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2021-02-25 15:31:03",
+    "sys_domain": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "2",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2021-02-25 15:31:03",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar",
+      "value": "sekar"
+    },
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "my new update from delete method",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "description": "this text from data sheet",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "933cfea52f66201028a057492799b66e",
+    "contact_type": "email",
+    "reopened_by": "",
+    "incident_state": "2",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi",
+      "value": "gopi"
+    },
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "1",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "software"
+  }
+}</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="34">
+<div class="step-ref bg-step">34</div>
+<div class="step-cell passed">* def sysid = getresponse.response.result.sys_id</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="35">
+<div class="step-ref bg-step">35</div>
+<div class="step-cell passed">* def shortdesp = getresponse.response.result.short_description</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="36">
+<div class="step-ref bg-step">36</div>
+<div class="step-cell passed">* print "short_description = "+shortdesp</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="36">20:56:22.898 [print] short_description = my new update from delete method</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="37">
+<div class="step-ref bg-step">37</div>
+<div class="step-cell passed">* print "sysid = "+sysid</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="37">20:56:22.900 [print] sysid = 933cfea52f66201028a057492799b66e</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="38">
+<div class="step-ref bg-step">38</div>
+<div class="step-cell passed">Given url 'https://dev68166.service-now.com'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1:12]bg">
+<div class="step-container" id="39">
+<div class="step-ref bg-step">39</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="40">
+<div class="step-ref passed">40</div>
+<div class="step-cell passed">Given path '/api/now/v1/table/incident/',sysid</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="41">
+<div class="step-ref passed">41</div>
+<div class="step-cell passed">And request { "short_description": "seku short desc" }</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="42">
+<div class="step-ref passed">42</div>
+<div class="step-cell passed">When method delete</div>
+</div>
+<div class="time-cell passed">2085</div>
+</div>
+<div class="preformatted" data-parent="42">20:56:22.916 request:
+1 &gt; DELETE https://dev68166.service-now.com/api/now/v1/table/incident/933cfea52f66201028a057492799b66e
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 39
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"short_description":"seku short desc"}
+
+20:56:24.996 response time in milliseconds: 2080.21
+1 &lt; 204
+1 &lt; Content-Encoding: gzip
+1 &lt; Date: Thu, 25 Feb 2021 15:31:08 GMT
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=C3FC988049D2D5BFFFA7CD7B31D332F7; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:15 GMT; Path=/; HttpOnly;Secure, glide_session_store=E04CFA212F22201028A057492799B6F7; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:08 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Transaction-ID: 284cfa212f22</div>
+<div class="step-row">
+<div class="step-container" id="43">
+<div class="step-ref passed">43</div>
+<div class="step-cell passed">Then status 204</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="44">
+<div class="step-ref passed">44</div>
+<div class="step-cell passed">And match response.length() == 0</div>
+</div>
+<div class="time-cell passed">26</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:20]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:20]</span><span class="scenario-name">User login into service </span>
+</div>
+<div class="scenario-time passed">ms: 9658</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:20]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="45">
+<div class="step-ref bg-step">45</div>
+<div class="step-cell passed">* def getresponse = call read("patchIncident.feature") {_url: 'https://dev68166.service-now.com', _path: '/api/now/v1/table/incident/', _sd: 'my new update from delete method'}</div>
+</div>
+<div class="time-cell passed">7172</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="45.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">com/api/basicAuthsAdditional/patchIncident.feature</div>
+</div>
+<div class="time-cell passed">7148</div>
+</div>
+<div class="callarg-container" data-parent="45.1">
+<div class="step-ref"> 
+</div>
+<div class="preformatted">{
+  "_url": "https://dev68166.service-now.com",
+  "_path": "/api/now/v1/table/incident/",
+  "_sd": "my new update from delete method"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="46">
+<div class="step-ref bg-step">46</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url _url</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="46">20:56:25.043 karate.env system property was:</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="47">
+<div class="step-ref bg-step">47</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="48">
+<div class="step-ref bg-step">48</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def getresponse = call read("postIncident.feature") {_url: 'https://dev68166.service-now.com', _path: '/api/now/v1/table/incident', _callerid: 'thomes', _assignto: 'myself'}</div>
+</div>
+<div class="time-cell passed">4784</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="48.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">com/api/basicAuthsAdditional/postIncident.feature</div>
+</div>
+<div class="time-cell passed">4742</div>
+</div>
+<div class="callarg-container" data-parent="48.1">
+<div class="step-ref"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="preformatted">{
+  "_url": "https://dev68166.service-now.com",
+  "_path": "/api/now/v1/table/incident",
+  "_callerid": "thomes",
+  "_assignto": "myself"
+}
+</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="49">
+<div class="step-ref bg-step">49</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url _url</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="50">
+<div class="step-ref bg-step">50</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="51">
+<div class="step-ref bg-step">51</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path _path</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="52">
+<div class="step-ref bg-step">52</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def ranvalue = function() {return Math.floor((100) * Math.random()); }</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="53">
+<div class="step-ref bg-step">53</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="53">{
+"short_description":"Test incident creation through REST",
+"comments":"These are my comments",
+"description": "this text from data sheet",
+"state": '#(ranvalue())',
+"category": "software",
+"contact_type": "email",
+"caller_id": '#(_callerid)',
+"assigned_to": '#(_assignto)',
+"work_notes": "home work",
+"comments_and_work_notes": "Solved (Permanently)"  
+}</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="54">
+<div class="step-ref bg-step">54</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">2443</div>
+</div>
+<div class="preformatted" data-parent="54">20:56:25.119 request:
+1 &gt; POST https://dev68166.service-now.com/api/now/v1/table/incident
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 312
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"short_description":"Test incident creation through REST","comments":"These are my comments","description":"this text from data sheet","state":88.0,"category":"software","contact_type":"email","caller_id":"thomes","assigned_to":"myself","work_notes":"home work","comments_and_work_notes":"Solved (Permanently)"}
+
+20:56:27.554 response time in milliseconds: 2062.38
+1 &lt; 201
+1 &lt; Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Thu, 25 Feb 2021 15:31:10 GMT
+1 &lt; Expires: 0
+1 &lt; Location: https://dev68166.service-now.com/api/now/v1/table/incident/4d4c36e52f66201028a057492799b692
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=B2F945279DA98109DD90FA1B313C1FD0; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:17 GMT; Path=/; HttpOnly;Secure, glide_session_store=C14CF2212F22201028A057492799B6F2; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:10 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Transaction-ID: 094cf2212f22
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2021-02-25 15:31:10","child_incidents":"0","hold_reason":"","task_effective_number":"INC0010060","approval_history":"","number":"INC0010060","resolved_by":"","sys_updated_by":"admin","opened_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441","value":"6816f79cc0a8016401c5a33be04be441"},"user_input":"","sys_created_on":"2021-02-25 15:31:10","sys_domain":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global","value":"global"},"state":"2","route_reason":"","sys_created_by":"admin","knowledge":"false","order":"","calendar_stc":"","closed_at":"","cmdb_ci":"","delivery_plan":"","contract":"","impact":"3","active":"true","work_notes_list":"","business_service":"","priority":"5","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2021-02-25 15:31:10","business_duration":"","group_list":"","work_end":"","caller_id":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/thomes","value":"thomes"},"reopened_time":"","resolved_at":"","approval_set":"","subcategory":"","work_notes":"","universal_request":"","short_description":"Test incident creation through REST","close_code":"","correlation_display":"","delivery_task":"","work_start":"","assignment_group":"","additional_assignee_list":"","business_stc":"","description":"this text from data sheet","calendar_duration":"","close_notes":"","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":"","follow_up":"","parent_incident":"","sys_id":"4d4c36e52f66201028a057492799b692","contact_type":"email","reopened_by":"","incident_state":"2","urgency":"3","problem_id":"","company":"","reassignment_count":"0","activity_due":"","assigned_to":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/myself","value":"myself"},"severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"0","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"software"}}</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="55">
+<div class="step-ref bg-step">55</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="56">
+<div class="step-ref bg-step">56</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="56">20:56:27.558 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2021-02-25 15:31:10",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "task_effective_number": "INC0010060",
+    "approval_history": "",
+    "number": "INC0010060",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2021-02-25 15:31:10",
+    "sys_domain": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "2",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2021-02-25 15:31:10",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/thomes",
+      "value": "thomes"
+    },
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "Test incident creation through REST",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "description": "this text from data sheet",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "4d4c36e52f66201028a057492799b692",
+    "contact_type": "email",
+    "reopened_by": "",
+    "incident_state": "2",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/myself",
+      "value": "myself"
+    },
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "0",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "software"
+  }
+}</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="57">
+<div class="step-ref bg-step">57</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == '#notnull'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="58">
+<div class="step-ref bg-step">58</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response.result.assigned_to.value == "myself"</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="59">
+<div class="step-ref bg-step">59</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url _url</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="60">
+<div class="step-ref bg-step">60</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="61">
+<div class="step-ref bg-step">61</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path _path</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="62">
+<div class="step-ref bg-step">62</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def body = read("classpath:com/api/basicAuths/data/signup.json")</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="63">
+<div class="step-ref bg-step">63</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request body</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="64">
+<div class="step-ref bg-step">64</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">2265</div>
+</div>
+<div class="preformatted" data-parent="64">20:56:27.592 request:
+1 &gt; POST https://dev68166.service-now.com/api/now/v1/table/incident
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 308
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"short_description":"Test incident creation through REST","comments":"These are my comments","description":"this text from data sheet","state":"1","category":"software","contact_type":"email","caller_id":"sekar","assigned_to":"gopi","work_notes":"home work","comments_and_work_notes":"Solved (Permanently)"}
+
+20:56:29.844 response time in milliseconds: 1881.40
+1 &lt; 201
+1 &lt; Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Thu, 25 Feb 2021 15:31:13 GMT
+1 &lt; Expires: 0
+1 &lt; Location: https://dev68166.service-now.com/api/now/v1/table/incident/a14c76e52f66201028a057492799b600
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=7F795C1AE61671683B2AF0979CC2C963; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:20 GMT; Path=/; HttpOnly;Secure, glide_session_store=A14C72A12FE2201028A057492799B641; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:13 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Transaction-ID: e54c72a12fe2
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2021-02-25 15:31:13","child_incidents":"0","hold_reason":"","task_effective_number":"INC0010061","approval_history":"","number":"INC0010061","resolved_by":"","sys_updated_by":"admin","opened_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441","value":"6816f79cc0a8016401c5a33be04be441"},"user_input":"","sys_created_on":"2021-02-25 15:31:13","sys_domain":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global","value":"global"},"state":"2","route_reason":"","sys_created_by":"admin","knowledge":"false","order":"","calendar_stc":"","closed_at":"","cmdb_ci":"","delivery_plan":"","contract":"","impact":"3","active":"true","work_notes_list":"","business_service":"","priority":"5","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2021-02-25 15:31:13","business_duration":"","group_list":"","work_end":"","caller_id":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar","value":"sekar"},"reopened_time":"","resolved_at":"","approval_set":"","subcategory":"","work_notes":"","universal_request":"","short_description":"Test incident creation through REST","close_code":"","correlation_display":"","delivery_task":"","work_start":"","assignment_group":"","additional_assignee_list":"","business_stc":"","description":"this text from data sheet","calendar_duration":"","close_notes":"","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":"","follow_up":"","parent_incident":"","sys_id":"a14c76e52f66201028a057492799b600","contact_type":"email","reopened_by":"","incident_state":"2","urgency":"3","problem_id":"","company":"","reassignment_count":"0","activity_due":"","assigned_to":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi","value":"gopi"},"severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"0","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"software"}}</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="65">
+<div class="step-ref bg-step">65</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="66">
+<div class="step-ref bg-step">66</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="66">20:56:29.850 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2021-02-25 15:31:13",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "task_effective_number": "INC0010061",
+    "approval_history": "",
+    "number": "INC0010061",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2021-02-25 15:31:13",
+    "sys_domain": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "2",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2021-02-25 15:31:13",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar",
+      "value": "sekar"
+    },
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "Test incident creation through REST",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "description": "this text from data sheet",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "a14c76e52f66201028a057492799b600",
+    "contact_type": "email",
+    "reopened_by": "",
+    "incident_state": "2",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi",
+      "value": "gopi"
+    },
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "0",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "software"
+  }
+}</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="67">
+<div class="step-ref bg-step">67</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == '#notnull'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="68">
+<div class="step-ref bg-step">68</div>
+<div class="step-indent"> 
+</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response.result.category == "software"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="69">
+<div class="step-ref bg-step">69</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def sysid = getresponse.response.result.sys_id</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="70">
+<div class="step-ref bg-step">70</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def shortdesp = getresponse.response.result.short_description</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="71">
+<div class="step-ref bg-step">71</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print "short_description = "+shortdesp</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="71">20:56:29.866 [print] short_description = Test incident creation through REST</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="72">
+<div class="step-ref bg-step">72</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* print "sysid = "+sysid</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="72">20:56:29.869 [print] sysid = a14c76e52f66201028a057492799b600</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="73">
+<div class="step-ref bg-step">73</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path _path,sysid</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="74">
+<div class="step-ref bg-step">74</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And request { "short_description": '#(_sd)'}</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="75">
+<div class="step-ref bg-step">75</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method patch</div>
+</div>
+<div class="time-cell passed">2341</div>
+</div>
+<div class="preformatted" data-parent="75">20:56:29.886 request:
+1 &gt; PATCH https://dev68166.service-now.com/api/now/v1/table/incident/a14c76e52f66201028a057492799b600
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 56
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"short_description":"my new update from delete method"}
+
+20:56:32.214 response time in milliseconds: 1928.82
+1 &lt; 200
+1 &lt; Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Thu, 25 Feb 2021 15:31:15 GMT
+1 &lt; Expires: 0
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=87A113CDF5E8320187E001C275D658A8; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:22 GMT; Path=/; HttpOnly;Secure, glide_session_store=DA4CF6212F22201028A057492799B6A3; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:15 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Transaction-ID: 124cf6212f22
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2021-02-25 15:31:15","child_incidents":"0","hold_reason":"","task_effective_number":"INC0010061","approval_history":"","number":"INC0010061","resolved_by":"","sys_updated_by":"admin","opened_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441","value":"6816f79cc0a8016401c5a33be04be441"},"user_input":"","sys_created_on":"2021-02-25 15:31:13","sys_domain":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global","value":"global"},"state":"2","route_reason":"","sys_created_by":"admin","knowledge":"false","order":"","calendar_stc":"","closed_at":"","cmdb_ci":"","delivery_plan":"","contract":"","impact":"3","active":"true","work_notes_list":"","business_service":"","priority":"5","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2021-02-25 15:31:13","business_duration":"","group_list":"","work_end":"","caller_id":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar","value":"sekar"},"reopened_time":"","resolved_at":"","approval_set":"","subcategory":"","work_notes":"","universal_request":"","short_description":"my new update from delete method","close_code":"","correlation_display":"","delivery_task":"","work_start":"","assignment_group":"","additional_assignee_list":"","business_stc":"","description":"this text from data sheet","calendar_duration":"","close_notes":"","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":"","follow_up":"","parent_incident":"","sys_id":"a14c76e52f66201028a057492799b600","contact_type":"email","reopened_by":"","incident_state":"2","urgency":"3","problem_id":"","company":"","reassignment_count":"0","activity_due":"","assigned_to":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi","value":"gopi"},"severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"1","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"software"}}</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="76">
+<div class="step-ref bg-step">76</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="77">
+<div class="step-ref bg-step">77</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="77">20:56:32.215 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2021-02-25 15:31:15",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "task_effective_number": "INC0010061",
+    "approval_history": "",
+    "number": "INC0010061",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2021-02-25 15:31:13",
+    "sys_domain": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "2",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2021-02-25 15:31:13",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar",
+      "value": "sekar"
+    },
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "my new update from delete method",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "description": "this text from data sheet",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "a14c76e52f66201028a057492799b600",
+    "contact_type": "email",
+    "reopened_by": "",
+    "incident_state": "2",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi",
+      "value": "gopi"
+    },
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "1",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "software"
+  }
+}</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="78">
+<div class="step-ref bg-step">78</div>
+<div class="step-cell passed">* def sysid = getresponse.response.result.sys_id</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="79">
+<div class="step-ref bg-step">79</div>
+<div class="step-cell passed">* def shortdesp = getresponse.response.result.short_description</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="80">
+<div class="step-ref bg-step">80</div>
+<div class="step-cell passed">* print "short_description = "+shortdesp</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="80">20:56:32.219 [print] short_description = my new update from delete method</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="81">
+<div class="step-ref bg-step">81</div>
+<div class="step-cell passed">* print "sysid = "+sysid</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="81">20:56:32.221 [print] sysid = a14c76e52f66201028a057492799b600</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="82">
+<div class="step-ref bg-step">82</div>
+<div class="step-cell passed">Given url 'https://dev68166.service-now.com'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="83">
+<div class="step-ref bg-step">83</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="84">
+<div class="step-ref passed">84</div>
+<div class="step-cell passed">* def getresponse = call read("getIncident.feature") {_url: 'https://dev68166.service-now.com', _path: '/api/now/v1/table/incident', _fields: 'number, sys_id, short_description', _sysid: '#(sysid)'}</div>
+</div>
+<div class="time-cell passed">2451</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="84.1">
+<div class="step-ref passed">&gt;&gt;</div>
+<div class="step-cell passed">com/api/basicAuthsAdditional/getIncident.feature</div>
+</div>
+<div class="time-cell passed">2422</div>
+</div>
+<div class="callarg-container" data-parent="84.1">
+<div class="step-ref"> 
+</div>
+<div class="preformatted">{
+  "_url": "https://dev68166.service-now.com",
+  "_path": "/api/now/v1/table/incident",
+  "_fields": "number, sys_id, short_description",
+  "_sysid": "a14c76e52f66201028a057492799b600"
+}
+</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="85">
+<div class="step-ref passed">85</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url _url</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="86">
+<div class="step-ref passed">86</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="87">
+<div class="step-ref passed">87</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given path _path</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="88">
+<div class="step-ref passed">88</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And param sysparm_fields = _fields</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="89">
+<div class="step-ref passed">89</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">2310</div>
+</div>
+<div class="preformatted" data-parent="89">20:56:32.269 request:
+1 &gt; GET https://dev68166.service-now.com/api/now/v1/table/incident?sysparm_fields=number%2C+sys_id%2C+short_description
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+20:56:34.526 response time in milliseconds: 1855.37
+1 &lt; 200
+1 &lt; Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Thu, 25 Feb 2021 15:31:17 GMT
+1 &lt; Expires: 0
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=43C54640687FA3176F395B8D2417CF9C; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:24 GMT; Path=/; HttpOnly;Secure, glide_session_store=F64C722D2F62201028A057492799B661; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:17 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Total-Count: 116
+1 &lt; X-Transaction-ID: 3e4c722d2f62
+{"result":[{"number":"INC0000010","sys_id":"46b9490da9fe1981003c938dab89bda3","short_description":"Need Oracle 10GR2 installed"},{"number":"INC0000011","sys_id":"46c03489a9fe19810148cd5b8cbf501e","short_description":"Need new Blackberry set up"},{"number":"INC0000012","sys_id":"46c88ac1a9fe1981014de1c831fbcf6d","short_description":"Customer didn't receive eFax"},{"number":"INC0000013","sys_id":"46cebb88a9fe198101aee93734f9768b","short_description":"EMAIL is slow when an attachment is involved"},{"number":"INC0000014","sys_id":"46e18c0fa9fe19810066a0083f76bd56","short_description":"Missing my home directory"},{"number":"INC0000021","sys_id":"46ee0924a9fe198100f1cf78c198454a","short_description":"New employee hire"},{"number":"INC0000024","sys_id":"46ee8c2fa9fe198100623592c70d643e","short_description":"Issue with a web page on wiki"},{"number":"INC0000026","sys_id":"46f1784ba9fe19810018aa27fbb23482","short_description":"Seem to have an issue with my hard drive..."},{"number":"INC0000028","sys_id":"46f3ee0ea9fe198100c5c0e53d5abe0b","short_description":"My disk is still having issues. Can't delete a file"},{"number":"INC0000030","sys_id":"46f6ede0a9fe198100e10154c34a0c2a","short_description":"Lost connection to the wireless network"},{"number":"INC0000032","sys_id":"47079b68a9fe198100a614a4c225c88d","short_description":"EMAIL Server Down Again"},{"number":"INC0000033","sys_id":"470af5afa9fe198101b324dd773ef379","short_description":"File Server is 80% full - Needs upgrade"},{"number":"INC0000034","sys_id":"470d51a0a9fe1981006c20c825e48933","short_description":"Does not look like a backup occurred last night"},{"number":"INC0000035","sys_id":"47138238a9fe1981016e3762d1fd26d4","short_description":"Reset my password"},{"number":"INC0000036","sys_id":"4714a2aca9fe198100ecabacf6273482","short_description":"Issue with networking"},{"number":"INC0000038","sys_id":"4717dfe5a9fe198100450448b2404c16","short_description":"my PDF docs are all locked from editing"},{"number":"INC0000006","sys_id":"8d6246c7c0a80164012fb063cecd4ace","short_description":"Hangs when trying to print VISIO document"},{"number":"INC0000008","sys_id":"8d641046c0a80164000bc7c0d3ed46a0","short_description":"Printer in my office is out of toner"},{"number":"INC0000001","sys_id":"9c573169c611228700193229fff72400","short_description":"Can't read email"},{"number":"INC0000004","sys_id":"9d3c1197c611228701cd1d94bc32d76d","short_description":"Forgot email password"},{"number":"INC0000601","sys_id":"9e7f9864532023004247ddeeff7b121f","short_description":"The USB port on my PC stopped working"},{"number":"INC0009003","sys_id":"9fffc328731823002728660c4cf6a742","short_description":"Cannot sign into the company portal app"},{"number":"INC0009004","sys_id":"e329de99731423002728660c4cf6a73c","short_description":"Defect tracking tool is down."},{"number":"INC0000005","sys_id":"e8e875b0c0a80164009dc852b4d677d5","short_description":"CPU load high for over 10 minutes"},{"number":"INC0010028","sys_id":"08b366e52f26201028a057492799b61f","short_description":"Test incident creation through REST"},{"number":"INC0010005","sys_id":"09a898dd2fae201028a057492799b664","short_description":"Test incident creation through REST"},{"number":"INC0010050","sys_id":"0b3a3e652f66201028a057492799b60d","short_description":"Test incident creation through REST"},{"number":"INC0010016","sys_id":"11a24e6d2fa2201028a057492799b6dc","short_description":"Test incident creation through REST"},{"number":"INC0010003","sys_id":"197b57b82fe2201028a057492799b6b2","short_description":"Test incident creation through REST"},{"number":"INC0010019","sys_id":"27a0162d2fe2201028a057492799b6a4","short_description":"Test incident creation through REST"},{"number":"INC0010006","sys_id":"282a54112f62601028a057492799b6d7","short_description":"Test incident creation through REST"},{"number":"INC0010014","sys_id":"2b9286e12fe2201028a057492799b60a","short_description":"Test incident creation through REST"},{"number":"INC0010049","sys_id":"36c9b6652f66201028a057492799b6c0","short_description":"my new update from delete method"},{"number":"INC0010032","sys_id":"39e1faed2f26201028a057492799b63d","short_description":"Test incident creation through REST"},{"number":"INC0010036","sys_id":"4535bea12f66201028a057492799b651","short_description":"Test incident creation through REST"},{"number":"INC0010020","sys_id":"45b0162d2fe2201028a057492799b6fa","short_description":"Test incident creation through REST"},{"number":"INC0010009","sys_id":"45d5bc912f62601028a057492799b63b","short_description":"Test incident creation through REST"},{"number":"INC0000009","sys_id":"46b66a40a9fe198101f243dfbc79033d","short_description":"Reset my password"},{"number":"INC0000015","sys_id":"46e2fee9a9fe19810049b49dee0daf58","short_description":"I can't launch my VPN client since the last software update"},{"number":"INC0000016","sys_id":"46e3e949a9fe19810069b824ba2c761a","short_description":"Rain is leaking on main DNS Server"},{"number":"INC0000017","sys_id":"46e482d9a9fe198101d3e3f3e2a14459","short_description":"How do I create a sub-folder"},{"number":"INC0000018","sys_id":"46e57642a9fe1981000b96a5dca501ff","short_description":"Sales forecast spreadsheet is READ ONLY"},{"number":"INC0000019","sys_id":"46e8219ba9fe1981013806b6e04fed06","short_description":"Can't launch 64-bit Windows 7 virtual machine"},{"number":"INC0000020","sys_id":"46edaa6aa9fe198101b9d14ced16619f","short_description":"I need a replacement iPhone, please"},{"number":"INC0000025","sys_id":"46f09e75a9fe198100f4ffd8d366d17b","short_description":"Need to add more memory to laptop"},{"number":"INC0000027","sys_id":"46f4f4dfa9fe198100063e60278f76ec","short_description":"Please remove the latest hotfix from my PC"},{"number":"INC0000029","sys_id":"46f67787a9fe198101e06dfcf3a78e99","short_description":"I can't get my weather report"},{"number":"INC0000031","sys_id":"47064b68a9fe19810186793eefffc9b7","short_description":"Need help with Remedy. Can we configure UI?"},{"number":"INC0000037","sys_id":"4715ab62a9fe1981018c3efb96143495","short_description":"Request for a new service"},{"number":"INC0000039","sys_id":"471bfbc7a9fe198101e77a3e10e5d47f","short_description":"Trouble getting to Oregon mail server"},{"number":"INC0000040","sys_id":"471d4732a9fe198100affbf655e59172","short_description":"JavaScript error on hiring page of corporate website"},{"number":"INC0000041","sys_id":"471eb058a9fe198100f89592e1ea93d3","short_description":"My desk phone does not work"},{"number":"INC0000044","sys_id":"47204688a9fe1981011a20af100f381a","short_description":"Can't log into SAP from my laptop today"},{"number":"INC0010044","sys_id":"4798bea12f66201028a057492799b6d9","short_description":"Test incident creation through REST"},{"number":"INC0010060","sys_id":"4d4c36e52f66201028a057492799b692","short_description":"Test incident creation through REST"},{"number":"INC0010112","sys_id":"552c48888c033300964f4932b03eb092","short_description":"Assessment :  ATF Assessor"},{"number":"INC0010024","sys_id":"55422e252f26201028a057492799b69b","short_description":"Test incident creation through REST"},{"number":"INC0010051","sys_id":"554a76252f66201028a057492799b636","short_description":"my new update from delete method"},{"number":"INC0009009","sys_id":"57af7aec73d423002728660c4cf6a71c","short_description":"Unable to access the shared folder."},{"number":"INC0010058","sys_id":"623cfea52f66201028a057492799b63d","short_description":"Test incident creation through REST"},{"number":"INC0010052","sys_id":"63ba32a52f66201028a057492799b698","short_description":"Test incident creation through REST"},{"number":"INC0010057","sys_id":"65bbfea52f66201028a057492799b666","short_description":"my new update from delete method"},{"number":"INC0010037","sys_id":"6935bea12f66201028a057492799b6ba","short_description":"my new update from delete method"},{"number":"INC0010022","sys_id":"6d1e5e212f26201028a057492799b68a","short_description":"Test incident creation through REST"},{"number":"INC0010038","sys_id":"7137bea12f66201028a057492799b6fd","short_description":"Test incident creation through REST"},{"number":"INC0010025","sys_id":"7142662d2fe2201028a057492799b625","short_description":"Test incident creation through REST"},{"number":"INC0000057","sys_id":"78271e1347c12200e0ef563dbb9a7109","short_description":"Performance problems with wifi"},{"number":"INC0010046","sys_id":"7a3932652f66201028a057492799b68e","short_description":"Test incident creation through REST"},{"number":"INC0010034","sys_id":"7e25b2612f66201028a057492799b63e","short_description":"Test incident creation through REST"},{"number":"INC0010055","sys_id":"811b3aa52f66201028a057492799b6aa","short_description":"my new update from delete method"},{"number":"INC0010021","sys_id":"81b0562d2fe2201028a057492799b607","short_description":"Test incident creation through REST"},{"number":"INC0000059","sys_id":"85071a1347c12200e0ef563dbb9a71c1","short_description":"Unable to access team file share"},{"number":"INC0010026","sys_id":"88d266e52f26201028a057492799b619","short_description":"Test incident creation through REST"},{"number":"INC0000007","sys_id":"8d6353eac0a8016400d8a125ca14fc1f","short_description":"Need access to sales DB for the West"},{"number":"INC0010030","sys_id":"8dff22e52f26201028a057492799b6a7","short_description":"Test incident creation through REST"},{"number":"INC0010023","sys_id":"90d1662d2fe2201028a057492799b605","short_description":"Test incident creation through REST"},{"number":"INC0000058","sys_id":"965c9e5347c12200e0ef563dbb9a7156","short_description":"Performance problems with email"},{"number":"INC0010054","sys_id":"9b0b3aa52f66201028a057492799b6cb","short_description":"Test incident creation through REST"},{"number":"INC0010010","sys_id":"9c80ca292fa2201028a057492799b642","short_description":"Test incident creation through REST"},{"number":"INC0000002","sys_id":"9d385017c611228701d22104cc95c371","short_description":"Network file shares access issue"},{"number":"INC0010061","sys_id":"a14c76e52f66201028a057492799b600","short_description":"my new update from delete method"},{"number":"INC0001990","sys_id":"a2496c05731110107418660c4cf6a711","short_description":"Unable to access the personal details section in payroll portal"},{"number":"INC0009001","sys_id":"a623cdb073a023002728660c4cf6a768","short_description":"Unable to post content on a Wiki page"},{"number":"INC0010015","sys_id":"a792ca612fe2201028a057492799b603","short_description":"Test incident creation through REST"},{"number":"INC0010018","sys_id":"a7a096e12fe2201028a057492799b615","short_description":"Test incident creation through REST"},{"number":"INC0010111","sys_id":"a83820b58f723300e7e16c7827bdeed2","short_description":"ATF : Test1"},{"number":"INC0000047","sys_id":"a9a16740c61122760004fe9095b7ddca","short_description":"Issue with email"},{"number":"INC0000046","sys_id":"a9e30c7dc61122760116894de7bcc7bd","short_description":"Can't access SFA software"},{"number":"INC0000048","sys_id":"a9e428cac61122760075710592216c58","short_description":"Having problems with Sales Tools performance"},{"number":"INC0010008","sys_id":"acd5bc912fa2601028a057492799b629","short_description":"Test incident creation through REST"},{"number":"INC0010040","sys_id":"ba6736252f66201028a057492799b667","short_description":"Test incident creation through REST"},{"number":"INC0010012","sys_id":"c13202a12fe2201028a057492799b6fb","short_description":"Test incident creation through REST"},{"number":"INC0010048","sys_id":"c6c93e652f66201028a057492799b603","short_description":"Test incident creation through REST"},{"number":"INC0010056","sys_id":"c9bb3aa52f66201028a057492799b6d5","short_description":"Test incident creation through REST"},{"number":"INC0010042","sys_id":"ca7736252f66201028a057492799b671","short_description":"Test incident creation through REST"},{"number":"INC0010007","sys_id":"ce9d10dd2f22601028a057492799b632","short_description":"Test incident creation through REST"},{"number":"INC0010011","sys_id":"d0804a252f22201028a057492799b698","short_description":"Test incident creation through REST"},{"number":"INC0000051","sys_id":"d7158da0c0a8016700eef46c8d1f3661","short_description":"Manager can't access SAP Controlling application"},{"number":"INC0000052","sys_id":"d7195138c0a8016700fd68449cfcd484","short_description":"SAP Financial Accounting application appears to be down"},{"number":"INC0000053","sys_id":"d71b3b41c0a8016700a8ef040791e72a","short_description":"The SAP HR application is not accessible"},{"number":"INC0000054","sys_id":"d71da88ac0a801670061eabfe4b28f77","short_description":"SAP Materials Management is slow or there is an outage"},{"number":"INC0000055","sys_id":"d71f7935c0a8016700802b64c67c11c6","short_description":"SAP Sales app is not accessible"},{"number":"INC0010017","sys_id":"dda286e12fe2201028a057492799b618","short_description":"Test incident creation through REST"},{"number":"INC0010029","sys_id":"e0b3aae52f26201028a057492799b6cc","short_description":"seku short desc"},{"number":"INC0010004","sys_id":"e3e750952fee201028a057492799b63b","short_description":"Test incident creation through REST"},{"number":"INC0010047","sys_id":"e549b6652f66201028a057492799b6b8","short_description":"my new update from delete method"},{"number":"INC0000003","sys_id":"e8caedcbc0a80164017df472f39eaed1","short_description":"Wireless access is down in my area"},{"number":"INC0010027","sys_id":"ecd2662d2fe2201028a057492799b62a","short_description":"Test incident creation through REST"},{"number":"INC0010013","sys_id":"ed3242a12fe2201028a057492799b604","short_description":"Test incident creation through REST"},{"number":"INC0009005","sys_id":"ed92e8d173d023002728660c4cf6a7bc","short_description":"Email server is down."},{"number":"INC0000049","sys_id":"ef4225a40a0a0b5700d0b8a790747812","short_description":"Network storage unavailable"},{"number":"INC0000050","sys_id":"ef43c6d40a0a0b5700c77f9bf387afe3","short_description":"Can't access Exchange server - is it down?"},{"number":"INC0007001","sys_id":"f12ca184735123002728660c4cf6a7ef","short_description":"Employee payroll application server is down."},{"number":"INC0010045","sys_id":"f79876252f66201028a057492799b658","short_description":"my new update from delete method"},{"number":"INC0010043","sys_id":"fe7776252f66201028a057492799b607","short_description":"my new update from delete method"},{"number":"INC0007002","sys_id":"ff4c21c4735123002728660c4cf6a758","short_description":"Need access to the common drive."}]}</div>
+<div class="step-row">
+<div class="step-container" id="90">
+<div class="step-ref passed">90</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell comment">#And print response</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="91">
+<div class="step-ref passed">91</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And match response == '#notnull'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="92">
+<div class="step-ref passed">92</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And def priority = karate.jsonPath(response, "$..[?(@.sys_id=='#(_sysid)')].number")</div>
+</div>
+<div class="time-cell passed">93</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="93">
+<div class="step-ref passed">93</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And print priority</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="93">20:56:34.672 [print] [
+]</div>
+<div class="step-row">
+<div class="step-container" id="94">
+<div class="step-ref passed">94</div>
+<div class="step-cell passed">Given print getresponse</div>
+</div>
+<div class="time-cell passed">30</div>
+</div>
+<div class="preformatted" data-parent="94">20:56:34.698 [print] {
+  "_sysid": "a14c76e52f66201028a057492799b600",
+  "getresponse": {
+    "getresponse": {
+      "responseTime": 1881,
+      "_callerid": "thomes",
+      "_path": "/api/now/v1/table/incident",
+      "env": "dev",
+      "body": {
+        "short_description": "Test incident creation through REST",
+        "comments": "These are my comments",
+        "description": "this text from data sheet",
+        "state": "1",
+        "category": "software",
+        "contact_type": "email",
+        "caller_id": "sekar",
+        "assigned_to": "gopi",
+        "work_notes": "home work",
+        "comments_and_work_notes": "Solved (Permanently)"
+      },
+      "responseStatus": 201,
+      "__loop": -1,
+      "_assignto": "myself",
+      "_sd": "my new update from delete method",
+      "__arg": {
+        "_url": "https://dev68166.service-now.com",
+        "_path": "/api/now/v1/table/incident",
+        "_callerid": "thomes",
+        "_assignto": "myself"
+      },
+      "responseType": "json",
+      "responseHeaders": {
+        "Set-Cookie": [
+          "JSESSIONID=7F795C1AE61671683B2AF0979CC2C963; Path=/; HttpOnly;Secure",
+          "glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure",
+          "glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure",
+          "glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:20 GMT; Path=/; HttpOnly;Secure",
+          "glide_session_store=A14C72A12FE2201028A057492799B641; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:13 GMT; Path=/; HttpOnly;Secure",
+          "BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure"
+        ],
+        "X-Is-Logged-In": [
+          "true"
+        ],
+        "X-Transaction-ID": [
+          "e54c72a12fe2"
+        ],
+        "Location": [
+          "https://dev68166.service-now.com/api/now/v1/table/incident/a14c76e52f66201028a057492799b600"
+        ],
+        "Pragma": [
+          "no-store,no-cache"
+        ],
+        "Cache-control": [
+          "no-cache,no-store,must-revalidate,max-age=-1"
+        ],
+        "Expires": [
+          "0"
+        ],
+        "Content-Type": [
+          "application/json;charset=UTF-8"
+        ],
+        "Transfer-Encoding": [
+          "chunked"
+        ],
+        "Date": [
+          "Thu, 25 Feb 2021 15:31:13 GMT"
+        ],
+        "Server": [
+          "ServiceNow"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=63072000; includeSubDomains"
+        ]
+      },
+      "response": {
+        "result": {
+          "parent": "",
+          "made_sla": "true",
+          "caused_by": "",
+          "watch_list": "",
+          "upon_reject": "cancel",
+          "sys_updated_on": "2021-02-25 15:31:13",
+          "child_incidents": "0",
+          "hold_reason": "",
+          "task_effective_number": "INC0010061",
+          "approval_history": "",
+          "number": "INC0010061",
+          "resolved_by": "",
+          "sys_updated_by": "admin",
+          "opened_by": {
+            "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+            "value": "6816f79cc0a8016401c5a33be04be441"
+          },
+          "user_input": "",
+          "sys_created_on": "2021-02-25 15:31:13",
+          "sys_domain": {
+            "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+            "value": "global"
+          },
+          "state": "2",
+          "route_reason": "",
+          "sys_created_by": "admin",
+          "knowledge": "false",
+          "order": "",
+          "calendar_stc": "",
+          "closed_at": "",
+          "cmdb_ci": "",
+          "delivery_plan": "",
+          "contract": "",
+          "impact": "3",
+          "active": "true",
+          "work_notes_list": "",
+          "business_service": "",
+          "priority": "5",
+          "sys_domain_path": "/",
+          "rfc": "",
+          "time_worked": "",
+          "expected_start": "",
+          "opened_at": "2021-02-25 15:31:13",
+          "business_duration": "",
+          "group_list": "",
+          "work_end": "",
+          "caller_id": {
+            "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar",
+            "value": "sekar"
+          },
+          "reopened_time": "",
+          "resolved_at": "",
+          "approval_set": "",
+          "subcategory": "",
+          "work_notes": "",
+          "universal_request": "",
+          "short_description": "Test incident creation through REST",
+          "close_code": "",
+          "correlation_display": "",
+          "delivery_task": "",
+          "work_start": "",
+          "assignment_group": "",
+          "additional_assignee_list": "",
+          "business_stc": "",
+          "description": "this text from data sheet",
+          "calendar_duration": "",
+          "close_notes": "",
+          "notify": "1",
+          "service_offering": "",
+          "sys_class_name": "incident",
+          "closed_by": "",
+          "follow_up": "",
+          "parent_incident": "",
+          "sys_id": "a14c76e52f66201028a057492799b600",
+          "contact_type": "email",
+          "reopened_by": "",
+          "incident_state": "2",
+          "urgency": "3",
+          "problem_id": "",
+          "company": "",
+          "reassignment_count": "0",
+          "activity_due": "",
+          "assigned_to": {
+            "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi",
+            "value": "gopi"
+          },
+          "severity": "3",
+          "comments": "",
+          "approval": "not requested",
+          "sla_due": "",
+          "comments_and_work_notes": "",
+          "due_date": "",
+          "sys_mod_count": "0",
+          "reopen_count": "0",
+          "sys_tags": "",
+          "escalation": "0",
+          "upon_approval": "proceed",
+          "correlation_id": "",
+          "location": "",
+          "category": "software"
+        }
+      },
+      "requestTimeStamp": 1614266787592,
+      "myVarName": "someValue",
+      "_url": "https://dev68166.service-now.com",
+      "responseCookies": {
+        "BIGipServerpool_dev68166": {
+          "name": "BIGipServerpool_dev68166",
+          "value": "310662922.65344.0000",
+          "domain": "dev68166.service-now.com",
+          "path": "/",
+          "persistent": "false",
+          "secure": "true"
+        },
+        "JSESSIONID": {
+          "name": "JSESSIONID",
+          "value": "7F795C1AE61671683B2AF0979CC2C963",
+          "domain": "dev68166.service-now.com",
+          "path": "/",
+          "persistent": "false",
+          "secure": "true"
+        },
+        "glide_session_store": {
+          "name": "glide_session_store",
+          "value": "A14C72A12FE2201028A057492799B641",
+          "domain": "dev68166.service-now.com",
+          "path": "/",
+          "expires": "1614268873000",
+          "persistent": "true",
+          "secure": "true"
+        },
+        "glide_user_route": {
+          "name": "glide_user_route",
+          "value": "glide.32e787a8904b2b31f84cf83f280a16ab",
+          "domain": "dev68166.service-now.com",
+          "path": "/",
+          "expires": "3761750720000",
+          "persistent": "true",
+          "secure": "true"
+        }
+      }
+    },
+    "sysid": "a14c76e52f66201028a057492799b600",
+    "responseTime": 1929,
+    "_path": "/api/now/v1/table/incident/",
+    "env": "dev",
+    "responseStatus": 200,
+    "__loop": -1,
+    "_sd": "my new update from delete method",
+    "__arg": {
+      "_url": "https://dev68166.service-now.com",
+      "_path": "/api/now/v1/table/incident/",
+      "_sd": "my new update from delete method"
+    },
+    "responseType": "json",
+    "responseHeaders": {
+      "Set-Cookie": [
+        "JSESSIONID=87A113CDF5E8320187E001C275D658A8; Path=/; HttpOnly;Secure",
+        "glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure",
+        "glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure",
+        "glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:22 GMT; Path=/; HttpOnly;Secure",
+        "glide_session_store=DA4CF6212F22201028A057492799B6A3; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:15 GMT; Path=/; HttpOnly;Secure",
+        "BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure"
+      ],
+      "X-Is-Logged-In": [
+        "true"
+      ],
+      "X-Transaction-ID": [
+        "124cf6212f22"
+      ],
+      "Pragma": [
+        "no-store,no-cache"
+      ],
+      "Cache-control": [
+        "no-cache,no-store,must-revalidate,max-age=-1"
+      ],
+      "Expires": [
+        "0"
+      ],
+      "Content-Type": [
+        "application/json;charset=UTF-8"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Thu, 25 Feb 2021 15:31:15 GMT"
+      ],
+      "Server": [
+        "ServiceNow"
+      ],
+      "Strict-Transport-Security": [
+        "max-age=63072000; includeSubDomains"
+      ]
+    },
+    "response": {
+      "result": {
+        "parent": "",
+        "made_sla": "true",
+        "caused_by": "",
+        "watch_list": "",
+        "upon_reject": "cancel",
+        "sys_updated_on": "2021-02-25 15:31:15",
+        "child_incidents": "0",
+        "hold_reason": "",
+        "task_effective_number": "INC0010061",
+        "approval_history": "",
+        "number": "INC0010061",
+        "resolved_by": "",
+        "sys_updated_by": "admin",
+        "opened_by": {
+          "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+          "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "user_input": "",
+        "sys_created_on": "2021-02-25 15:31:13",
+        "sys_domain": {
+          "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+          "value": "global"
+        },
+        "state": "2",
+        "route_reason": "",
+        "sys_created_by": "admin",
+        "knowledge": "false",
+        "order": "",
+        "calendar_stc": "",
+        "closed_at": "",
+        "cmdb_ci": "",
+        "delivery_plan": "",
+        "contract": "",
+        "impact": "3",
+        "active": "true",
+        "work_notes_list": "",
+        "business_service": "",
+        "priority": "5",
+        "sys_domain_path": "/",
+        "rfc": "",
+        "time_worked": "",
+        "expected_start": "",
+        "opened_at": "2021-02-25 15:31:13",
+        "business_duration": "",
+        "group_list": "",
+        "work_end": "",
+        "caller_id": {
+          "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar",
+          "value": "sekar"
+        },
+        "reopened_time": "",
+        "resolved_at": "",
+        "approval_set": "",
+        "subcategory": "",
+        "work_notes": "",
+        "universal_request": "",
+        "short_description": "my new update from delete method",
+        "close_code": "",
+        "correlation_display": "",
+        "delivery_task": "",
+        "work_start": "",
+        "assignment_group": "",
+        "additional_assignee_list": "",
+        "business_stc": "",
+        "description": "this text from data sheet",
+        "calendar_duration": "",
+        "close_notes": "",
+        "notify": "1",
+        "service_offering": "",
+        "sys_class_name": "incident",
+        "closed_by": "",
+        "follow_up": "",
+        "parent_incident": "",
+        "sys_id": "a14c76e52f66201028a057492799b600",
+        "contact_type": "email",
+        "reopened_by": "",
+        "incident_state": "2",
+        "urgency": "3",
+        "problem_id": "",
+        "company": "",
+        "reassignment_count": "0",
+        "activity_due": "",
+        "assigned_to": {
+          "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi",
+          "value": "gopi"
+        },
+        "severity": "3",
+        "comments": "",
+        "approval": "not requested",
+        "sla_due": "",
+        "comments_and_work_notes": "",
+        "due_date": "",
+        "sys_mod_count": "1",
+        "reopen_count": "0",
+        "sys_tags": "",
+        "escalation": "0",
+        "upon_approval": "proceed",
+        "correlation_id": "",
+        "location": "",
+        "category": "software"
+      }
+    },
+    "requestTimeStamp": 1614266789887,
+    "myVarName": "someValue",
+    "_url": "https://dev68166.service-now.com",
+    "responseCookies": {
+      "BIGipServerpool_dev68166": {
+        "name": "BIGipServerpool_dev68166",
+        "value": "310662922.65344.0000",
+        "domain": "dev68166.service-now.com",
+        "path": "/",
+        "persistent": "false",
+        "secure": "true"
+      },
+      "JSESSIONID": {
+        "name": "JSESSIONID",
+        "value": "87A113CDF5E8320187E001C275D658A8",
+        "domain": "dev68166.service-now.com",
+        "path": "/",
+        "persistent": "false",
+        "secure": "true"
+      },
+      "glide_session_store": {
+        "name": "glide_session_store",
+        "value": "DA4CF6212F22201028A057492799B6A3",
+        "domain": "dev68166.service-now.com",
+        "path": "/",
+        "expires": "1614268875000",
+        "persistent": "true",
+        "secure": "true"
+      },
+      "glide_user_route": {
+        "name": "glide_user_route",
+        "value": "glide.32e787a8904b2b31f84cf83f280a16ab",
+        "domain": "dev68166.service-now.com",
+        "path": "/",
+        "expires": "3761750722000",
+        "persistent": "true",
+        "secure": "true"
+      }
+    },
+    "shortdesp": "Test incident creation through REST"
+  },
+  "sysid": "a14c76e52f66201028a057492799b600",
+  "responseTime": 1855,
+  "_path": "/api/now/v1/table/incident",
+  "env": "dev",
+  "responseStatus": 200,
+  "priority": [
+  ],
+  "_fields": "number, sys_id, short_description",
+  "__loop": -1,
+  "__arg": {
+    "_url": "https://dev68166.service-now.com",
+    "_path": "/api/now/v1/table/incident",
+    "_fields": "number, sys_id, short_description",
+    "_sysid": "a14c76e52f66201028a057492799b600"
+  },
+  "responseType": "json",
+  "responseHeaders": {
+    "Set-Cookie": [
+      "JSESSIONID=43C54640687FA3176F395B8D2417CF9C; Path=/; HttpOnly;Secure",
+      "glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure",
+      "glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure",
+      "glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 18:45:24 GMT; Path=/; HttpOnly;Secure",
+      "glide_session_store=F64C722D2F62201028A057492799B661; Max-Age=1800; Expires=Thu, 25-Feb-2021 16:01:17 GMT; Path=/; HttpOnly;Secure",
+      "BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure"
+    ],
+    "X-Is-Logged-In": [
+      "true"
+    ],
+    "X-Transaction-ID": [
+      "3e4c722d2f62"
+    ],
+    "X-Total-Count": [
+      "116"
+    ],
+    "Pragma": [
+      "no-store,no-cache"
+    ],
+    "Cache-control": [
+      "no-cache,no-store,must-revalidate,max-age=-1"
+    ],
+    "Expires": [
+      "0"
+    ],
+    "Content-Type": [
+      "application/json;charset=UTF-8"
+    ],
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Date": [
+      "Thu, 25 Feb 2021 15:31:17 GMT"
+    ],
+    "Server": [
+      "ServiceNow"
+    ],
+    "Strict-Transport-Security": [
+      "max-age=63072000; includeSubDomains"
+    ]
+  },
+  "response": {
+    "result": [
+      {
+        "number": "INC0000010",
+        "sys_id": "46b9490da9fe1981003c938dab89bda3",
+        "short_description": "Need Oracle 10GR2 installed"
+      },
+      {
+        "number": "INC0000011",
+        "sys_id": "46c03489a9fe19810148cd5b8cbf501e",
+        "short_description": "Need new Blackberry set up"
+      },
+      {
+        "number": "INC0000012",
+        "sys_id": "46c88ac1a9fe1981014de1c831fbcf6d",
+        "short_description": "Customer didn't receive eFax"
+      },
+      {
+        "number": "INC0000013",
+        "sys_id": "46cebb88a9fe198101aee93734f9768b",
+        "short_description": "EMAIL is slow when an attachment is involved"
+      },
+      {
+        "number": "INC0000014",
+        "sys_id": "46e18c0fa9fe19810066a0083f76bd56",
+        "short_description": "Missing my home directory"
+      },
+      {
+        "number": "INC0000021",
+        "sys_id": "46ee0924a9fe198100f1cf78c198454a",
+        "short_description": "New employee hire"
+      },
+      {
+        "number": "INC0000024",
+        "sys_id": "46ee8c2fa9fe198100623592c70d643e",
+        "short_description": "Issue with a web page on wiki"
+      },
+      {
+        "number": "INC0000026",
+        "sys_id": "46f1784ba9fe19810018aa27fbb23482",
+        "short_description": "Seem to have an issue with my hard drive..."
+      },
+      {
+        "number": "INC0000028",
+        "sys_id": "46f3ee0ea9fe198100c5c0e53d5abe0b",
+        "short_description": "My disk is still having issues. Can't delete a file"
+      },
+      {
+        "number": "INC0000030",
+        "sys_id": "46f6ede0a9fe198100e10154c34a0c2a",
+        "short_description": "Lost connection to the wireless network"
+      },
+      {
+        "number": "INC0000032",
+        "sys_id": "47079b68a9fe198100a614a4c225c88d",
+        "short_description": "EMAIL Server Down Again"
+      },
+      {
+        "number": "INC0000033",
+        "sys_id": "470af5afa9fe198101b324dd773ef379",
+        "short_description": "File Server is 80% full - Needs upgrade"
+      },
+      {
+        "number": "INC0000034",
+        "sys_id": "470d51a0a9fe1981006c20c825e48933",
+        "short_description": "Does not look like a backup occurred last night"
+      },
+      {
+        "number": "INC0000035",
+        "sys_id": "47138238a9fe1981016e3762d1fd26d4",
+        "short_description": "Reset my password"
+      },
+      {
+        "number": "INC0000036",
+        "sys_id": "4714a2aca9fe198100ecabacf6273482",
+        "short_description": "Issue with networking"
+      },
+      {
+        "number": "INC0000038",
+        "sys_id": "4717dfe5a9fe198100450448b2404c16",
+        "short_description": "my PDF docs are all locked from editing"
+      },
+      {
+        "number": "INC0000006",
+        "sys_id": "8d6246c7c0a80164012fb063cecd4ace",
+        "short_description": "Hangs when trying to print VISIO document"
+      },
+      {
+        "number": "INC0000008",
+        "sys_id": "8d641046c0a80164000bc7c0d3ed46a0",
+        "short_description": "Printer in my office is out of toner"
+      },
+      {
+        "number": "INC0000001",
+        "sys_id": "9c573169c611228700193229fff72400",
+        "short_description": "Can't read email"
+      },
+      {
+        "number": "INC0000004",
+        "sys_id": "9d3c1197c611228701cd1d94bc32d76d",
+        "short_description": "Forgot email password"
+      },
+      {
+        "number": "INC0000601",
+        "sys_id": "9e7f9864532023004247ddeeff7b121f",
+        "short_description": "The USB port on my PC stopped working"
+      },
+      {
+        "number": "INC0009003",
+        "sys_id": "9fffc328731823002728660c4cf6a742",
+        "short_description": "Cannot sign into the company portal app"
+      },
+      {
+        "number": "INC0009004",
+        "sys_id": "e329de99731423002728660c4cf6a73c",
+        "short_description": "Defect tracking tool is down."
+      },
+      {
+        "number": "INC0000005",
+        "sys_id": "e8e875b0c0a80164009dc852b4d677d5",
+        "short_description": "CPU load high for over 10 minutes"
+      },
+      {
+        "number": "INC0010028",
+        "sys_id": "08b366e52f26201028a057492799b61f",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010005",
+        "sys_id": "09a898dd2fae201028a057492799b664",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010050",
+        "sys_id": "0b3a3e652f66201028a057492799b60d",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010016",
+        "sys_id": "11a24e6d2fa2201028a057492799b6dc",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010003",
+        "sys_id": "197b57b82fe2201028a057492799b6b2",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010019",
+        "sys_id": "27a0162d2fe2201028a057492799b6a4",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010006",
+        "sys_id": "282a54112f62601028a057492799b6d7",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010014",
+        "sys_id": "2b9286e12fe2201028a057492799b60a",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010049",
+        "sys_id": "36c9b6652f66201028a057492799b6c0",
+        "short_description": "my new update from delete method"
+      },
+      {
+        "number": "INC0010032",
+        "sys_id": "39e1faed2f26201028a057492799b63d",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010036",
+        "sys_id": "4535bea12f66201028a057492799b651",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010020",
+        "sys_id": "45b0162d2fe2201028a057492799b6fa",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010009",
+        "sys_id": "45d5bc912f62601028a057492799b63b",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0000009",
+        "sys_id": "46b66a40a9fe198101f243dfbc79033d",
+        "short_description": "Reset my password"
+      },
+      {
+        "number": "INC0000015",
+        "sys_id": "46e2fee9a9fe19810049b49dee0daf58",
+        "short_description": "I can't launch my VPN client since the last software update"
+      },
+      {
+        "number": "INC0000016",
+        "sys_id": "46e3e949a9fe19810069b824ba2c761a",
+        "short_description": "Rain is leaking on main DNS Server"
+      },
+      {
+        "number": "INC0000017",
+        "sys_id": "46e482d9a9fe198101d3e3f3e2a14459",
+        "short_description": "How do I create a sub-folder"
+      },
+      {
+        "number": "INC0000018",
+        "sys_id": "46e57642a9fe1981000b96a5dca501ff",
+        "short_description": "Sales forecast spreadsheet is READ ONLY"
+      },
+      {
+        "number": "INC0000019",
+        "sys_id": "46e8219ba9fe1981013806b6e04fed06",
+        "short_description": "Can't launch 64-bit Windows 7 virtual machine"
+      },
+      {
+        "number": "INC0000020",
+        "sys_id": "46edaa6aa9fe198101b9d14ced16619f",
+        "short_description": "I need a replacement iPhone, please"
+      },
+      {
+        "number": "INC0000025",
+        "sys_id": "46f09e75a9fe198100f4ffd8d366d17b",
+        "short_description": "Need to add more memory to laptop"
+      },
+      {
+        "number": "INC0000027",
+        "sys_id": "46f4f4dfa9fe198100063e60278f76ec",
+        "short_description": "Please remove the latest hotfix from my PC"
+      },
+      {
+        "number": "INC0000029",
+        "sys_id": "46f67787a9fe198101e06dfcf3a78e99",
+        "short_description": "I can't get my weather report"
+      },
+      {
+        "number": "INC0000031",
+        "sys_id": "47064b68a9fe19810186793eefffc9b7",
+        "short_description": "Need help with Remedy. Can we configure UI?"
+      },
+      {
+        "number": "INC0000037",
+        "sys_id": "4715ab62a9fe1981018c3efb96143495",
+        "short_description": "Request for a new service"
+      },
+      {
+        "number": "INC0000039",
+        "sys_id": "471bfbc7a9fe198101e77a3e10e5d47f",
+        "short_description": "Trouble getting to Oregon mail server"
+      },
+      {
+        "number": "INC0000040",
+        "sys_id": "471d4732a9fe198100affbf655e59172",
+        "short_description": "JavaScript error on hiring page of corporate website"
+      },
+      {
+        "number": "INC0000041",
+        "sys_id": "471eb058a9fe198100f89592e1ea93d3",
+        "short_description": "My desk phone does not work"
+      },
+      {
+        "number": "INC0000044",
+        "sys_id": "47204688a9fe1981011a20af100f381a",
+        "short_description": "Can't log into SAP from my laptop today"
+      },
+      {
+        "number": "INC0010044",
+        "sys_id": "4798bea12f66201028a057492799b6d9",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010060",
+        "sys_id": "4d4c36e52f66201028a057492799b692",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010112",
+        "sys_id": "552c48888c033300964f4932b03eb092",
+        "short_description": "Assessment :  ATF Assessor"
+      },
+      {
+        "number": "INC0010024",
+        "sys_id": "55422e252f26201028a057492799b69b",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010051",
+        "sys_id": "554a76252f66201028a057492799b636",
+        "short_description": "my new update from delete method"
+      },
+      {
+        "number": "INC0009009",
+        "sys_id": "57af7aec73d423002728660c4cf6a71c",
+        "short_description": "Unable to access the shared folder."
+      },
+      {
+        "number": "INC0010058",
+        "sys_id": "623cfea52f66201028a057492799b63d",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010052",
+        "sys_id": "63ba32a52f66201028a057492799b698",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010057",
+        "sys_id": "65bbfea52f66201028a057492799b666",
+        "short_description": "my new update from delete method"
+      },
+      {
+        "number": "INC0010037",
+        "sys_id": "6935bea12f66201028a057492799b6ba",
+        "short_description": "my new update from delete method"
+      },
+      {
+        "number": "INC0010022",
+        "sys_id": "6d1e5e212f26201028a057492799b68a",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010038",
+        "sys_id": "7137bea12f66201028a057492799b6fd",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010025",
+        "sys_id": "7142662d2fe2201028a057492799b625",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0000057",
+        "sys_id": "78271e1347c12200e0ef563dbb9a7109",
+        "short_description": "Performance problems with wifi"
+      },
+      {
+        "number": "INC0010046",
+        "sys_id": "7a3932652f66201028a057492799b68e",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010034",
+        "sys_id": "7e25b2612f66201028a057492799b63e",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010055",
+        "sys_id": "811b3aa52f66201028a057492799b6aa",
+        "short_description": "my new update from delete method"
+      },
+      {
+        "number": "INC0010021",
+        "sys_id": "81b0562d2fe2201028a057492799b607",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0000059",
+        "sys_id": "85071a1347c12200e0ef563dbb9a71c1",
+        "short_description": "Unable to access team file share"
+      },
+      {
+        "number": "INC0010026",
+        "sys_id": "88d266e52f26201028a057492799b619",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0000007",
+        "sys_id": "8d6353eac0a8016400d8a125ca14fc1f",
+        "short_description": "Need access to sales DB for the West"
+      },
+      {
+        "number": "INC0010030",
+        "sys_id": "8dff22e52f26201028a057492799b6a7",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010023",
+        "sys_id": "90d1662d2fe2201028a057492799b605",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0000058",
+        "sys_id": "965c9e5347c12200e0ef563dbb9a7156",
+        "short_description": "Performance problems with email"
+      },
+      {
+        "number": "INC0010054",
+        "sys_id": "9b0b3aa52f66201028a057492799b6cb",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010010",
+        "sys_id": "9c80ca292fa2201028a057492799b642",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0000002",
+        "sys_id": "9d385017c611228701d22104cc95c371",
+        "short_description": "Network file shares access issue"
+      },
+      {
+        "number": "INC0010061",
+        "sys_id": "a14c76e52f66201028a057492799b600",
+        "short_description": "my new update from delete method"
+      },
+      {
+        "number": "INC0001990",
+        "sys_id": "a2496c05731110107418660c4cf6a711",
+        "short_description": "Unable to access the personal details section in payroll portal"
+      },
+      {
+        "number": "INC0009001",
+        "sys_id": "a623cdb073a023002728660c4cf6a768",
+        "short_description": "Unable to post content on a Wiki page"
+      },
+      {
+        "number": "INC0010015",
+        "sys_id": "a792ca612fe2201028a057492799b603",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010018",
+        "sys_id": "a7a096e12fe2201028a057492799b615",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010111",
+        "sys_id": "a83820b58f723300e7e16c7827bdeed2",
+        "short_description": "ATF : Test1"
+      },
+      {
+        "number": "INC0000047",
+        "sys_id": "a9a16740c61122760004fe9095b7ddca",
+        "short_description": "Issue with email"
+      },
+      {
+        "number": "INC0000046",
+        "sys_id": "a9e30c7dc61122760116894de7bcc7bd",
+        "short_description": "Can't access SFA software"
+      },
+      {
+        "number": "INC0000048",
+        "sys_id": "a9e428cac61122760075710592216c58",
+        "short_description": "Having problems with Sales Tools performance"
+      },
+      {
+        "number": "INC0010008",
+        "sys_id": "acd5bc912fa2601028a057492799b629",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010040",
+        "sys_id": "ba6736252f66201028a057492799b667",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010012",
+        "sys_id": "c13202a12fe2201028a057492799b6fb",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010048",
+        "sys_id": "c6c93e652f66201028a057492799b603",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010056",
+        "sys_id": "c9bb3aa52f66201028a057492799b6d5",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010042",
+        "sys_id": "ca7736252f66201028a057492799b671",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010007",
+        "sys_id": "ce9d10dd2f22601028a057492799b632",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010011",
+        "sys_id": "d0804a252f22201028a057492799b698",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0000051",
+        "sys_id": "d7158da0c0a8016700eef46c8d1f3661",
+        "short_description": "Manager can't access SAP Controlling application"
+      },
+      {
+        "number": "INC0000052",
+        "sys_id": "d7195138c0a8016700fd68449cfcd484",
+        "short_description": "SAP Financial Accounting application appears to be down"
+      },
+      {
+        "number": "INC0000053",
+        "sys_id": "d71b3b41c0a8016700a8ef040791e72a",
+        "short_description": "The SAP HR application is not accessible"
+      },
+      {
+        "number": "INC0000054",
+        "sys_id": "d71da88ac0a801670061eabfe4b28f77",
+        "short_description": "SAP Materials Management is slow or there is an outage"
+      },
+      {
+        "number": "INC0000055",
+        "sys_id": "d71f7935c0a8016700802b64c67c11c6",
+        "short_description": "SAP Sales app is not accessible"
+      },
+      {
+        "number": "INC0010017",
+        "sys_id": "dda286e12fe2201028a057492799b618",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010029",
+        "sys_id": "e0b3aae52f26201028a057492799b6cc",
+        "short_description": "seku short desc"
+      },
+      {
+        "number": "INC0010004",
+        "sys_id": "e3e750952fee201028a057492799b63b",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010047",
+        "sys_id": "e549b6652f66201028a057492799b6b8",
+        "short_description": "my new update from delete method"
+      },
+      {
+        "number": "INC0000003",
+        "sys_id": "e8caedcbc0a80164017df472f39eaed1",
+        "short_description": "Wireless access is down in my area"
+      },
+      {
+        "number": "INC0010027",
+        "sys_id": "ecd2662d2fe2201028a057492799b62a",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0010013",
+        "sys_id": "ed3242a12fe2201028a057492799b604",
+        "short_description": "Test incident creation through REST"
+      },
+      {
+        "number": "INC0009005",
+        "sys_id": "ed92e8d173d023002728660c4cf6a7bc",
+        "short_description": "Email server is down."
+      },
+      {
+        "number": "INC0000049",
+        "sys_id": "ef4225a40a0a0b5700d0b8a790747812",
+        "short_description": "Network storage unavailable"
+      },
+      {
+        "number": "INC0000050",
+        "sys_id": "ef43c6d40a0a0b5700c77f9bf387afe3",
+        "short_description": "Can't access Exchange server - is it down?"
+      },
+      {
+        "number": "INC0007001",
+        "sys_id": "f12ca184735123002728660c4cf6a7ef",
+        "short_description": "Employee payroll application server is down."
+      },
+      {
+        "number": "INC0010045",
+        "sys_id": "f79876252f66201028a057492799b658",
+        "short_description": "my new update from delete method"
+      },
+      {
+        "number": "INC0010043",
+        "sys_id": "fe7776252f66201028a057492799b607",
+        "short_description": "my new update from delete method"
+      },
+      {
+        "number": "INC0007002",
+        "sys_id": "ff4c21c4735123002728660c4cf6a758",
+        "short_description": "Need access to the common drive."
+      }
+    ]
+  },
+  "requestTimeStamp": 1614266792269,
+  "myVarName": "someValue",
+  "_url": "https://dev68166.service-now.com",
+  "responseCookies": {
+    "BIGipServerpool_dev68166": {
+      "name": "BIGipServerpool_dev68166",
+      "value": "310662922.65344.0000",
+      "domain": "dev68166.service-now.com",
+      "path": "/",
+      "persistent": "false",
+      "secure": "true"
+    },
+    "JSESSIONID": {
+      "name": "JSESSIONID",
+      "value": "43C54640687FA3176F395B8D2417CF9C",
+      "domain": "dev68166.service-now.com",
+      "path": "/",
+      "persistent": "false",
+      "secure": "true"
+    },
+    "glide_session_store": {
+      "name": "glide_session_store",
+      "value": "F64C722D2F62201028A057492799B661",
+      "domain": "dev68166.service-now.com",
+      "path": "/",
+      "expires": "1614268877000",
+      "persistent": "true",
+      "secure": "true"
+    },
+    "glide_user_route": {
+      "name": "glide_user_route",
+      "value": "glide.32e787a8904b2b31f84cf83f280a16ab",
+      "domain": "dev68166.service-now.com",
+      "path": "/",
+      "expires": "3761750724000",
+      "persistent": "true",
+      "secure": "true"
+    }
+  },
+  "shortdesp": "my new update from delete method"
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

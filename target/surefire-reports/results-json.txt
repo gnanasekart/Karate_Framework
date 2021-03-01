@@ -1,0 +1,1 @@
+{"features":3,"ignored":2,"efficiency":0.3705000206996481,"failures":{"com.api.basicAuths.getIncident":"getIncident.feature:29 - path: $.result[0].priority, actual: '4', expected: '#? _ == 3', reason: did not evaluate to 'true'"},"totalTime":7159.5424,"threads":4,"scenarios":3,"failed":1,"passed":2,"version":"0.9.6","elapsedTime":4831.0}

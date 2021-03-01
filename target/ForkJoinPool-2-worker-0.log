@@ -1,0 +1,319 @@
+13:16:09.592 karate.env system property was:  
+13:16:09.598 request:
+1 > POST https://dev68166.service-now.com/api/now/v1/table/incident
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 > Connection: Keep-Alive
+1 > Content-Length: 309
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dev68166.service-now.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"short_description":"Test incident creation through REST","comments":"These are my comments","description":"this text from data sheet","state":15.0,"category":"software","contact_type":"email","caller_id":"sekar","assigned_to":"gopi","work_notes":"home work","comments_and_work_notes":"Solved (Permanently)"}
+
+13:16:11.941 response time in milliseconds: 1975.21
+1 < 201
+1 < Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 26 Feb 2021 07:50:55 GMT
+1 < Expires: 0
+1 < Location: https://dev68166.service-now.com/api/now/v1/table/incident/b08c9af12f22201028a057492799b613
+1 < Pragma: no-store,no-cache
+1 < Server: ServiceNow
+1 < Set-Cookie: [JSESSIONID=A9395E17B3A5113CFC7081646351C251; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Wed, 16-Mar-2089 11:05:02 GMT; Path=/; HttpOnly;Secure, glide_session_store=308C92712F22201028A057492799B613; Max-Age=1800; Expires=Fri, 26-Feb-2021 08:20:55 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < X-Is-Logged-In: true
+1 < X-Transaction-ID: 748c92712f22
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2021-02-26 07:50:55","child_incidents":"0","hold_reason":"","task_effective_number":"INC0010070","approval_history":"","number":"INC0010070","resolved_by":"","sys_updated_by":"admin","opened_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441","value":"6816f79cc0a8016401c5a33be04be441"},"user_input":"","sys_created_on":"2021-02-26 07:50:55","sys_domain":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global","value":"global"},"state":"2","route_reason":"","sys_created_by":"admin","knowledge":"false","order":"","calendar_stc":"","closed_at":"","cmdb_ci":"","delivery_plan":"","contract":"","impact":"3","active":"true","work_notes_list":"","business_service":"","priority":"5","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2021-02-26 07:50:55","business_duration":"","group_list":"","work_end":"","caller_id":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar","value":"sekar"},"reopened_time":"","resolved_at":"","approval_set":"","subcategory":"","work_notes":"","universal_request":"","short_description":"Test incident creation through REST","close_code":"","correlation_display":"","delivery_task":"","work_start":"","assignment_group":"","additional_assignee_list":"","business_stc":"","description":"this text from data sheet","calendar_duration":"","close_notes":"","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":"","follow_up":"","parent_incident":"","sys_id":"b08c9af12f22201028a057492799b613","contact_type":"email","reopened_by":"","incident_state":"2","urgency":"3","problem_id":"","company":"","reassignment_count":"0","activity_due":"","assigned_to":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi","value":"gopi"},"severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"0","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"software"}}
+
+13:16:11.944 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2021-02-26 07:50:55",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "task_effective_number": "INC0010070",
+    "approval_history": "",
+    "number": "INC0010070",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2021-02-26 07:50:55",
+    "sys_domain": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "2",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2021-02-26 07:50:55",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/sekar",
+      "value": "sekar"
+    },
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "Test incident creation through REST",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "description": "this text from data sheet",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "b08c9af12f22201028a057492799b613",
+    "contact_type": "email",
+    "reopened_by": "",
+    "incident_state": "2",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/gopi",
+      "value": "gopi"
+    },
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "0",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "software"
+  }
+}
+
+16:44:42.297 karate.env system property was:  
+16:44:42.312 request:
+1 > GET https://dev68166.service-now.com/api/now/v1/table/incident?sysparm_fields=number%2C+sys_id%2C+priority%2C+short_description%2C+sys_class_name
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 > Connection: Keep-Alive
+1 > Host: dev68166.service-now.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:44:44.398 response time in milliseconds: 1892.12
+1 < 200
+1 < Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 25 Feb 2021 11:19:27 GMT
+1 < Expires: 0
+1 < Pragma: no-store,no-cache
+1 < Server: ServiceNow
+1 < Set-Cookie: [JSESSIONID=78F6A6C846A9872382335469E4E49E28; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 14:33:34 GMT; Path=/; HttpOnly;Secure, glide_session_store=7DA20E212F22201028A057492799B634; Max-Age=1800; Expires=Thu, 25-Feb-2021 11:49:27 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < X-Is-Logged-In: true
+1 < X-Total-Count: 81
+1 < X-Transaction-ID: b1a20e212f22
+{"result":[{"number":"INC0000060","sys_id":"1c741bd70b2322007518478d83673af3","short_description":"seku short desc","priority":"3","sys_class_name":"incident"},{"number":"INC0009002","sys_id":"1c832706732023002728660c4cf6a7b9","short_description":"My computer is not detecting the headphone device","priority":"3","sys_class_name":"incident"},{"number":"INC0000009","sys_id":"46b66a40a9fe198101f243dfbc79033d","short_description":"Reset my password","priority":"1","sys_class_name":"incident"},{"number":"INC0000010","sys_id":"46b9490da9fe1981003c938dab89bda3","short_description":"Need Oracle 10GR2 installed","priority":"4","sys_class_name":"incident"},{"number":"INC0000011","sys_id":"46c03489a9fe19810148cd5b8cbf501e","short_description":"Need new Blackberry set up","priority":"3","sys_class_name":"incident"},{"number":"INC0000012","sys_id":"46c88ac1a9fe1981014de1c831fbcf6d","short_description":"Customer didn't receive eFax","priority":"5","sys_class_name":"incident"},{"number":"INC0000013","sys_id":"46cebb88a9fe198101aee93734f9768b","short_description":"EMAIL is slow when an attachment is involved","priority":"1","sys_class_name":"incident"},{"number":"INC0000014","sys_id":"46e18c0fa9fe19810066a0083f76bd56","short_description":"Missing my home directory","priority":"1","sys_class_name":"incident"},{"number":"INC0000021","sys_id":"46ee0924a9fe198100f1cf78c198454a","short_description":"New employee hire","priority":"5","sys_class_name":"incident"},{"number":"INC0000024","sys_id":"46ee8c2fa9fe198100623592c70d643e","short_description":"Issue with a web page on wiki","priority":"5","sys_class_name":"incident"},{"number":"INC0000026","sys_id":"46f1784ba9fe19810018aa27fbb23482","short_description":"Seem to have an issue with my hard drive...","priority":"5","sys_class_name":"incident"},{"number":"INC0000028","sys_id":"46f3ee0ea9fe198100c5c0e53d5abe0b","short_description":"My disk is still having issues. Can't delete a file","priority":"5","sys_class_name":"incident"},{"number":"INC0000030","sys_id":"46f6ede0a9fe198100e10154c34a0c2a","short_description":"Lost connection to the wireless network","priority":"5","sys_class_name":"incident"},{"number":"INC0000032","sys_id":"47079b68a9fe198100a614a4c225c88d","short_description":"EMAIL Server Down Again","priority":"5","sys_class_name":"incident"},{"number":"INC0000033","sys_id":"470af5afa9fe198101b324dd773ef379","short_description":"File Server is 80% full - Needs upgrade","priority":"1","sys_class_name":"incident"},{"number":"INC0000034","sys_id":"470d51a0a9fe1981006c20c825e48933","short_description":"Does not look like a backup occurred last night","priority":"1","sys_class_name":"incident"},{"number":"INC0000035","sys_id":"47138238a9fe1981016e3762d1fd26d4","short_description":"Reset my password","priority":"5","sys_class_name":"incident"},{"number":"INC0000036","sys_id":"4714a2aca9fe198100ecabacf6273482","short_description":"Issue with networking","priority":"5","sys_class_name":"incident"},{"number":"INC0000038","sys_id":"4717dfe5a9fe198100450448b2404c16","short_description":"my PDF docs are all locked from editing","priority":"4","sys_class_name":"incident"},{"number":"INC0000006","sys_id":"8d6246c7c0a80164012fb063cecd4ace","short_description":"Hangs when trying to print VISIO document","priority":"1","sys_class_name":"incident"},{"number":"INC0000008","sys_id":"8d641046c0a80164000bc7c0d3ed46a0","short_description":"Printer in my office is out of toner","priority":"1","sys_class_name":"incident"},{"number":"INC0000001","sys_id":"9c573169c611228700193229fff72400","short_description":"Can't read email","priority":"1","sys_class_name":"incident"},{"number":"INC0000004","sys_id":"9d3c1197c611228701cd1d94bc32d76d","short_description":"Forgot email password","priority":"1","sys_class_name":"incident"},{"number":"INC0000601","sys_id":"9e7f9864532023004247ddeeff7b121f","short_description":"The USB port on my PC stopped working","priority":"5","sys_class_name":"incident"},{"number":"INC0009003","sys_id":"9fffc328731823002728660c4cf6a742","short_description":"Cannot sign into the company portal app","priority":"3","sys_class_name":"incident"},{"number":"INC0009004","sys_id":"e329de99731423002728660c4cf6a73c","short_description":"Defect tracking tool is down.","priority":"3","sys_class_name":"incident"},{"number":"INC0000005","sys_id":"e8e875b0c0a80164009dc852b4d677d5","short_description":"CPU load high for over 10 minutes","priority":"1","sys_class_name":"incident"},{"number":"INC0010005","sys_id":"09a898dd2fae201028a057492799b664","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010016","sys_id":"11a24e6d2fa2201028a057492799b6dc","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010003","sys_id":"197b57b82fe2201028a057492799b6b2","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010006","sys_id":"282a54112f62601028a057492799b6d7","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010014","sys_id":"2b9286e12fe2201028a057492799b60a","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010009","sys_id":"45d5bc912f62601028a057492799b63b","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0000015","sys_id":"46e2fee9a9fe19810049b49dee0daf58","short_description":"I can't launch my VPN client since the last software update","priority":"1","sys_class_name":"incident"},{"number":"INC0000016","sys_id":"46e3e949a9fe19810069b824ba2c761a","short_description":"Rain is leaking on main DNS Server","priority":"1","sys_class_name":"incident"},{"number":"INC0000017","sys_id":"46e482d9a9fe198101d3e3f3e2a14459","short_description":"How do I create a sub-folder","priority":"1","sys_class_name":"incident"},{"number":"INC0000018","sys_id":"46e57642a9fe1981000b96a5dca501ff","short_description":"Sales forecast spreadsheet is READ ONLY","priority":"1","sys_class_name":"incident"},{"number":"INC0000019","sys_id":"46e8219ba9fe1981013806b6e04fed06","short_description":"Can't launch 64-bit Windows 7 virtual machine","priority":"2","sys_class_name":"incident"},{"number":"INC0000020","sys_id":"46edaa6aa9fe198101b9d14ced16619f","short_description":"I need a replacement iPhone, please","priority":"5","sys_class_name":"incident"},{"number":"INC0000025","sys_id":"46f09e75a9fe198100f4ffd8d366d17b","short_description":"Need to add more memory to laptop","priority":"1","sys_class_name":"incident"},{"number":"INC0000027","sys_id":"46f4f4dfa9fe198100063e60278f76ec","short_description":"Please remove the latest hotfix from my PC","priority":"2","sys_class_name":"incident"},{"number":"INC0000029","sys_id":"46f67787a9fe198101e06dfcf3a78e99","short_description":"I can't get my weather report","priority":"5","sys_class_name":"incident"},{"number":"INC0000031","sys_id":"47064b68a9fe19810186793eefffc9b7","short_description":"Need help with Remedy. Can we configure UI?","priority":"1","sys_class_name":"incident"},{"number":"INC0000037","sys_id":"4715ab62a9fe1981018c3efb96143495","short_description":"Request for a new service","priority":"3","sys_class_name":"incident"},{"number":"INC0000039","sys_id":"471bfbc7a9fe198101e77a3e10e5d47f","short_description":"Trouble getting to Oregon mail server","priority":"5","sys_class_name":"incident"},{"number":"INC0000040","sys_id":"471d4732a9fe198100affbf655e59172","short_description":"JavaScript error on hiring page of corporate website","priority":"3","sys_class_name":"incident"},{"number":"INC0000041","sys_id":"471eb058a9fe198100f89592e1ea93d3","short_description":"My desk phone does not work","priority":"3","sys_class_name":"incident"},{"number":"INC0000044","sys_id":"47204688a9fe1981011a20af100f381a","short_description":"Can't log into SAP from my laptop today","priority":"2","sys_class_name":"incident"},{"number":"INC0010112","sys_id":"552c48888c033300964f4932b03eb092","short_description":"Assessment :  ATF Assessor","priority":"5","sys_class_name":"incident"},{"number":"INC0009009","sys_id":"57af7aec73d423002728660c4cf6a71c","short_description":"Unable to access the shared folder.","priority":"4","sys_class_name":"incident"},{"number":"INC0000057","sys_id":"78271e1347c12200e0ef563dbb9a7109","short_description":"Performance problems with wifi","priority":"5","sys_class_name":"incident"},{"number":"INC0000059","sys_id":"85071a1347c12200e0ef563dbb9a71c1","short_description":"Unable to access team file share","priority":"3","sys_class_name":"incident"},{"number":"INC0000007","sys_id":"8d6353eac0a8016400d8a125ca14fc1f","short_description":"Need access to sales DB for the West","priority":"1","sys_class_name":"incident"},{"number":"INC0000058","sys_id":"965c9e5347c12200e0ef563dbb9a7156","short_description":"Performance problems with email","priority":"5","sys_class_name":"incident"},{"number":"INC0010010","sys_id":"9c80ca292fa2201028a057492799b642","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0000002","sys_id":"9d385017c611228701d22104cc95c371","short_description":"Network file shares access issue","priority":"1","sys_class_name":"incident"},{"number":"INC0001990","sys_id":"a2496c05731110107418660c4cf6a711","short_description":"Unable to access the personal details section in payroll portal","priority":"5","sys_class_name":"incident"},{"number":"INC0009001","sys_id":"a623cdb073a023002728660c4cf6a768","short_description":"Unable to post content on a Wiki page","priority":"3","sys_class_name":"incident"},{"number":"INC0010015","sys_id":"a792ca612fe2201028a057492799b603","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010111","sys_id":"a83820b58f723300e7e16c7827bdeed2","short_description":"ATF : Test1","priority":"5","sys_class_name":"incident"},{"number":"INC0000047","sys_id":"a9a16740c61122760004fe9095b7ddca","short_description":"Issue with email","priority":"3","sys_class_name":"incident"},{"number":"INC0000046","sys_id":"a9e30c7dc61122760116894de7bcc7bd","short_description":"Can't access SFA software","priority":"3","sys_class_name":"incident"},{"number":"INC0000048","sys_id":"a9e428cac61122760075710592216c58","short_description":"Having problems with Sales Tools performance","priority":"4","sys_class_name":"incident"},{"number":"INC0010008","sys_id":"acd5bc912fa2601028a057492799b629","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010012","sys_id":"c13202a12fe2201028a057492799b6fb","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010007","sys_id":"ce9d10dd2f22601028a057492799b632","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010011","sys_id":"d0804a252f22201028a057492799b698","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0000051","sys_id":"d7158da0c0a8016700eef46c8d1f3661","short_description":"Manager can't access SAP Controlling application","priority":"1","sys_class_name":"incident"},{"number":"INC0000052","sys_id":"d7195138c0a8016700fd68449cfcd484","short_description":"SAP Financial Accounting application appears to be down","priority":"1","sys_class_name":"incident"},{"number":"INC0000053","sys_id":"d71b3b41c0a8016700a8ef040791e72a","short_description":"The SAP HR application is not accessible","priority":"1","sys_class_name":"incident"},{"number":"INC0000054","sys_id":"d71da88ac0a801670061eabfe4b28f77","short_description":"SAP Materials Management is slow or there is an outage","priority":"1","sys_class_name":"incident"},{"number":"INC0000055","sys_id":"d71f7935c0a8016700802b64c67c11c6","short_description":"SAP Sales app is not accessible","priority":"1","sys_class_name":"incident"},{"number":"INC0010017","sys_id":"dda286e12fe2201028a057492799b618","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0010004","sys_id":"e3e750952fee201028a057492799b63b","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0000003","sys_id":"e8caedcbc0a80164017df472f39eaed1","short_description":"Wireless access is down in my area","priority":"1","sys_class_name":"incident"},{"number":"INC0010013","sys_id":"ed3242a12fe2201028a057492799b604","short_description":"Test incident creation through REST","priority":"5","sys_class_name":"incident"},{"number":"INC0009005","sys_id":"ed92e8d173d023002728660c4cf6a7bc","short_description":"Email server is down.","priority":"1","sys_class_name":"incident"},{"number":"INC0000049","sys_id":"ef4225a40a0a0b5700d0b8a790747812","short_description":"Network storage unavailable","priority":"2","sys_class_name":"incident"},{"number":"INC0000050","sys_id":"ef43c6d40a0a0b5700c77f9bf387afe3","short_description":"Can't access Exchange server - is it down?","priority":"1","sys_class_name":"incident"},{"number":"INC0007001","sys_id":"f12ca184735123002728660c4cf6a7ef","short_description":"Employee payroll application server is down.","priority":"1","sys_class_name":"incident"},{"number":"INC0007002","sys_id":"ff4c21c4735123002728660c4cf6a758","short_description":"Need access to the common drive.","priority":"4","sys_class_name":"incident"}]}
+
+16:44:44.411 [print] {
+  "number": "INC0000060",
+  "sys_id": "1c741bd70b2322007518478d83673af3",
+  "short_description": "seku short desc",
+  "priority": "3",
+  "sys_class_name": "incident"
+}
+
+16:44:44.416 [print] sysid = 1c741bd70b2322007518478d83673af3
+16:44:44.421 request:
+1 > PUT https://dev68166.service-now.com/api/now/v1/table/incident/1c741bd70b2322007518478d83673af3
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic YWRtaW46NjQxNjAxQFRncw==
+1 > Connection: Keep-Alive
+1 > Content-Length: 39
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dev68166.service-now.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"short_description":"seku short desc"}
+
+16:44:46.600 response time in milliseconds: 1943.65
+1 < 200
+1 < Cache-control: no-cache,no-store,must-revalidate,max-age=-1
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 25 Feb 2021 11:19:29 GMT
+1 < Expires: 0
+1 < Pragma: no-store,no-cache
+1 < Server: ServiceNow
+1 < Set-Cookie: [JSESSIONID=56CAA2D461486B80383F0898D47DC58B; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Tue, 15-Mar-2089 14:33:36 GMT; Path=/; HttpOnly;Secure, glide_session_store=16A2066D2F62201028A057492799B667; Max-Age=1800; Expires=Thu, 25-Feb-2021 11:49:29 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < X-Is-Logged-In: true
+1 < X-Transaction-ID: 5aa2066d2f62
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2021-02-25 10:49:15","child_incidents":"0","hold_reason":"","task_effective_number":"INC0000060","approval_history":"","number":"INC0000060","resolved_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/5137153cc611227c000bbd1bd8cd2007","value":"5137153cc611227c000bbd1bd8cd2007"},"sys_updated_by":"admin","opened_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/681ccaf9c0a8016400b98a06818d57c7","value":"681ccaf9c0a8016400b98a06818d57c7"},"user_input":"","sys_created_on":"2016-12-12 15:19:57","sys_domain":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global","value":"global"},"state":"7","route_reason":"","sys_created_by":"employee","knowledge":"false","order":"","calendar_stc":"102197","closed_at":"2016-12-14 02:46:44","cmdb_ci":{"link":"https://dev68166.service-now.com/api/now/v1/table/cmdb_ci/109562a3c611227500a7b7ff98cc0dc7","value":"109562a3c611227500a7b7ff98cc0dc7"},"delivery_plan":"","contract":"","impact":"2","active":"false","work_notes_list":"","business_service":{"link":"https://dev68166.service-now.com/api/now/v1/table/cmdb_ci_service/27d32778c0a8000b00db970eeaa60f16","value":"27d32778c0a8000b00db970eeaa60f16"},"priority":"3","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2016-12-12 15:19:57","business_duration":"1970-01-01 08:00:00","group_list":"","work_end":"","caller_id":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/681ccaf9c0a8016400b98a06818d57c7","value":"681ccaf9c0a8016400b98a06818d57c7"},"reopened_time":"","resolved_at":"2016-12-13 21:43:14","approval_set":"","subcategory":"email","work_notes":"","universal_request":"","short_description":"seku short desc","close_code":"Solved (Permanently)","correlation_display":"","delivery_task":"","work_start":"","assignment_group":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user_group/287ebd7da9fe198100f92cc8d1d2154e","value":"287ebd7da9fe198100f92cc8d1d2154e"},"additional_assignee_list":"","business_stc":"28800","description":"I am unable to connect to the email server. It appears to be down.","calendar_duration":"1970-01-02 04:23:17","close_notes":"This incident is resolved.","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/681ccaf9c0a8016400b98a06818d57c7","value":"681ccaf9c0a8016400b98a06818d57c7"},"follow_up":"","parent_incident":"","sys_id":"1c741bd70b2322007518478d83673af3","contact_type":"self-service","reopened_by":"","incident_state":"7","urgency":"2","problem_id":"","company":{"link":"https://dev68166.service-now.com/api/now/v1/table/core_company/31bea3d53790200044e0bfc8bcbe5dec","value":"31bea3d53790200044e0bfc8bcbe5dec"},"reassignment_count":"2","activity_due":"2016-12-13 01:26:36","assigned_to":{"link":"https://dev68166.service-now.com/api/now/v1/table/sys_user/5137153cc611227c000bbd1bd8cd2007","value":"5137153cc611227c000bbd1bd8cd2007"},"severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"17","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"inquiry"}}
+
+16:44:46.602 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2021-02-25 10:49:15",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "task_effective_number": "INC0000060",
+    "approval_history": "",
+    "number": "INC0000060",
+    "resolved_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/5137153cc611227c000bbd1bd8cd2007",
+      "value": "5137153cc611227c000bbd1bd8cd2007"
+    },
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/681ccaf9c0a8016400b98a06818d57c7",
+      "value": "681ccaf9c0a8016400b98a06818d57c7"
+    },
+    "user_input": "",
+    "sys_created_on": "2016-12-12 15:19:57",
+    "sys_domain": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "7",
+    "route_reason": "",
+    "sys_created_by": "employee",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "102197",
+    "closed_at": "2016-12-14 02:46:44",
+    "cmdb_ci": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/cmdb_ci/109562a3c611227500a7b7ff98cc0dc7",
+      "value": "109562a3c611227500a7b7ff98cc0dc7"
+    },
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "2",
+    "active": "false",
+    "work_notes_list": "",
+    "business_service": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/cmdb_ci_service/27d32778c0a8000b00db970eeaa60f16",
+      "value": "27d32778c0a8000b00db970eeaa60f16"
+    },
+    "priority": "3",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2016-12-12 15:19:57",
+    "business_duration": "1970-01-01 08:00:00",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/681ccaf9c0a8016400b98a06818d57c7",
+      "value": "681ccaf9c0a8016400b98a06818d57c7"
+    },
+    "reopened_time": "",
+    "resolved_at": "2016-12-13 21:43:14",
+    "approval_set": "",
+    "subcategory": "email",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "seku short desc",
+    "close_code": "Solved (Permanently)",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user_group/287ebd7da9fe198100f92cc8d1d2154e",
+      "value": "287ebd7da9fe198100f92cc8d1d2154e"
+    },
+    "additional_assignee_list": "",
+    "business_stc": "28800",
+    "description": "I am unable to connect to the email server. It appears to be down.",
+    "calendar_duration": "1970-01-02 04:23:17",
+    "close_notes": "This incident is resolved.",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/681ccaf9c0a8016400b98a06818d57c7",
+      "value": "681ccaf9c0a8016400b98a06818d57c7"
+    },
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "1c741bd70b2322007518478d83673af3",
+    "contact_type": "self-service",
+    "reopened_by": "",
+    "incident_state": "7",
+    "urgency": "2",
+    "problem_id": "",
+    "company": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/core_company/31bea3d53790200044e0bfc8bcbe5dec",
+      "value": "31bea3d53790200044e0bfc8bcbe5dec"
+    },
+    "reassignment_count": "2",
+    "activity_due": "2016-12-13 01:26:36",
+    "assigned_to": {
+      "link": "https://dev68166.service-now.com/api/now/v1/table/sys_user/5137153cc611227c000bbd1bd8cd2007",
+      "value": "5137153cc611227c000bbd1bd8cd2007"
+    },
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "17",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "inquiry"
+  }
+}
+

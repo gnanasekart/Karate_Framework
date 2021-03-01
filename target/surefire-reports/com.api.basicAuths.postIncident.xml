@@ -1,0 +1,36 @@
+<testsuite failures="0" name="com/api/basicAuths/postIncident.feature" skipped="0" tests="2" time="4.656119">
+  <testcase classname="com.api.basicAuths.postIncident" name="User login into service" time="2.351419">
+    <system-out>Given url 'https://dev68166.service-now.com' .............................. passed
+And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='} . passed
+Given path '/api/now/v1/table/incident' ................................... passed
+And def ranvalue = function() {return Math.floor((100) * Math.random()); } . passed
+And request { "short_description":"Test incident creation through REST", "comments":"These are my comments", "description": "this text from data sheet", "state": '#(ranvalue())', "category": "software", "contact_type": "email", "caller_id": "sekar", "assigned_to": "gopi", "work_notes": "home work", "comments_and_work_notes": "Solved (Permanently)"} . passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match response == '#notnull' .......................................... passed
+And match response.result.category == "software" .......................... passed</system-out>
+  </testcase>
+  <testcase classname="com.api.basicAuths.postIncident" name="User login into service" time="2.304701">
+    <system-out>Given url 'https://dev68166.service-now.com' .............................. passed
+And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='} . passed
+Given path '/api/now/v1/table/incident' ................................... passed
+And def ranvalue = function() {return Math.floor((100) * Math.random()); } . passed
+And request { "short_description":"Test incident creation through REST", "comments":"These are my comments", "description": "this text from data sheet", "state": '#(ranvalue())', "category": "software", "contact_type": "email", "caller_id": "sekar", "assigned_to": "gopi", "work_notes": "home work", "comments_and_work_notes": "Solved (Permanently)"} . passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match response == '#notnull' .......................................... passed
+And match response.result.category == "software" .......................... passed
+Given url 'https://dev68166.service-now.com' .............................. passed
+And headers {Accept:'application/json', Authorization:'Basic YWRtaW46NjQxNjAxQFRncw=='} . passed
+Given path '/api/now/v1/table/incident' ................................... passed
+And def body = read("data/signup.json") ................................... passed
+And request body .......................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match response == '#notnull' .......................................... passed
+And match response.result.category == "software" .......................... passed</system-out>
+  </testcase>
+</testsuite>

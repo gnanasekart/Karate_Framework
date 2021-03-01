@@ -13,7 +13,7 @@
 		<java.version>1.8</java.version>
 		<maven.compiler.version>3.8.1</maven.compiler.version>
 		<maven.surefire.version>2.22.2</maven.surefire.version>
-		<karate.version>1.0.0</karate.version>
+		<karate.version>0.9.6</karate.version>
 	</properties>
 
 	<dependencies>
@@ -23,9 +23,23 @@
 			<version>${karate.version}</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.intuit.karate</groupId>
+			<artifactId>karate-apache</artifactId>
+			<version>${karate.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>2.5.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
+
 		<testResources>
 			<testResource>
 				<directory>src/test/java</directory>
@@ -34,6 +48,7 @@
 				</excludes>
 			</testResource>
 		</testResources>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -46,6 +61,7 @@
 					<compilerArgument>-Werror</compilerArgument>
 				</configuration>
 			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -54,6 +70,7 @@
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 

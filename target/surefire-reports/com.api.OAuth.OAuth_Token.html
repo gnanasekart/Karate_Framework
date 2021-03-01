@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>com.api.OAuth.OAuth_Token</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-23 04:41:13 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:7]">[1:7] User login into service </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">com/api/OAuth/OAuth_Token.feature</span><span class="feature-description">User get the incident details</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">User login into service </span>
+</div>
+<div class="scenario-time passed">ms: 3290</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">Given url 'https://dev68166.service-now.com'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="1">16:41:10.495 karate.env system property was:</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">And headers {Accept:'application/x-www-form-urlencoded'}</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">Given path '/oauth_token.do'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">And form field grant_type = 'password'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And form field client_id = 'da0813b8c32620101cb8146c8dca8cca'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And form field client_secret = '0921123'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And form field username = 'admin'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And form field password = '641601@Tgs'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">3252</div>
+</div>
+<div class="preformatted" data-parent="9">16:41:11.903 request:
+1 &gt; POST https://dev68166.service-now.com/oauth_token.do
+1 &gt; Accept: application/x-www-form-urlencoded
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 121
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: dev68166.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+grant_type=password&amp;client_id=da0813b8c32620101cb8146c8dca8cca&amp;client_secret=0921123&amp;username=admin&amp;password=641601%40Tgs
+
+16:41:13.848 response time in milliseconds: 1942.66
+1 &lt; 200
+1 &lt; Content-Length: 272
+1 &lt; Content-Type: application/json;charset=utf-8
+1 &lt; Date: Tue, 23 Feb 2021 11:15:54 GMT
+1 &lt; Server: ServiceNow
+1 &lt; Set-Cookie: [JSESSIONID=B0D40C31E3A5100FFB3E36B43C340E31; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.32e787a8904b2b31f84cf83f280a16ab; Max-Age=2147483647; Expires=Sun, 13-Mar-2089 14:30:01 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev68166=310662922.65344.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; X-Is-Logged-In: false
+1 &lt; X-Transaction-ID: 82ae23f02f22
+{"access_token":"6wE2ukNMvJIfb1MgdF0huLyiI7_UaiQJ1ug7KuJXfparXvzWasgx8ZB7VLGUlCKapfHGuwToTrlCyMfl49UjGQ","refresh_token":"B3M_0jkUajrZQjbq9FyIw78UIyx-b1hXoishaHTzoliBJLAoqQLsiuFSd1W79yjTL4vVpptWN6iEa14RK2jjSA","scope":"useraccount","token_type":"Bearer","expires_in":1799}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">And match response == '#notnull'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">And def accesstoken = response.access_token</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And print "Access token for Oauth 2 = "+accesstoken</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="13">16:41:13.869 [print] Access token for Oauth 2 = 6wE2ukNMvJIfb1MgdF0huLyiI7_UaiQJ1ug7KuJXfparXvzWasgx8ZB7VLGUlCKapfHGuwToTrlCyMfl49UjGQ</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="14">16:41:13.870 [print] {
+  "access_token": "6wE2ukNMvJIfb1MgdF0huLyiI7_UaiQJ1ug7KuJXfparXvzWasgx8ZB7VLGUlCKapfHGuwToTrlCyMfl49UjGQ",
+  "refresh_token": "B3M_0jkUajrZQjbq9FyIw78UIyx-b1hXoishaHTzoliBJLAoqQLsiuFSd1W79yjTL4vVpptWN6iEa14RK2jjSA",
+  "scope": "useraccount",
+  "token_type": "Bearer",
+  "expires_in": 1799
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>com.api.variable.DataDriven</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">5</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-02-24 08:21:05 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:15]">[1.1:15] Fetching data from Example </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.2:16]">[1.2:16] Fetching data from Example </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.1:18]">[2.1:18] Fetching data from Example 2222 </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.2:18]">[2.2:18] Fetching data from Example 2233 </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.3:18]">[2.3:18] Fetching data from Example 2234 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">com/api/variable/DataDriven.feature</span><span class="feature-description">Data from Example</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:15]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.1:15]</span><span class="scenario-name">Fetching data from Example </span>
+</div>
+<div class="scenario-time passed">ms: 13</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:15]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:15]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">Given def testdata = read("testdata.csv")</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">20:21:05.169 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given print 'http://get'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="2">20:21:05.175 [print] http://get</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When print '/api/table'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="3">20:21:05.178 [print] /api/table</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then print 'get'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="4">20:21:05.181 [print] get</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And print '200'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="5">20:21:05.184 [print] 200</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.2:16]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.2:16]</span><span class="scenario-name">Fetching data from Example </span>
+</div>
+<div class="scenario-time passed">ms: 10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.2:16]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.2:16]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-cell passed">Given def testdata = read("testdata.csv")</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="6">20:21:05.192 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Given print 'http://post'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="7">20:21:05.198 [print] http://post</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">When print '/api/table'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="8">20:21:05.198 [print] /api/table</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">Then print 'post'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="9">20:21:05.201 [print] post</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And print '201'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="10">20:21:05.204 [print] 201</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.1:18]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.1:18]</span><span class="scenario-name">Fetching data from Example 2222 </span>
+</div>
+<div class="scenario-time passed">ms: 15</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.1:18]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.1:18]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-cell passed">Given def testdata = read("testdata.csv")</div>
+</div>
+<div class="time-cell passed">13</div>
+</div>
+<div class="preformatted" data-parent="11">20:21:01.055 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Given print '2222'</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="preformatted" data-parent="12">20:21:05.215 [print] 2222</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">When print 'husband'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="13">20:21:05.218 [print] husband</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">Then print 'home maker'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="14">20:21:05.221 [print] home maker</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">And print '200'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="15">20:21:05.223 [print] 200</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.2:18]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.2:18]</span><span class="scenario-name">Fetching data from Example 2233 </span>
+</div>
+<div class="scenario-time passed">ms: 10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.2:18]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.2:18]bg">
+<div class="step-container" id="16">
+<div class="step-ref bg-step">16</div>
+<div class="step-cell passed">Given def testdata = read("testdata.csv")</div>
+</div>
+<div class="time-cell passed">13</div>
+</div>
+<div class="preformatted" data-parent="16">20:21:01.055 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Given print '2233'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="17">20:21:05.229 [print] 2233</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">When print 'wife'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="18">20:21:05.231 [print] wife</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">Then print 'employee'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="19">20:21:05.234 [print] employee</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">And print '201'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="20">20:21:05.234 [print] 201</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.3:18]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.3:18]</span><span class="scenario-name">Fetching data from Example 2234 </span>
+</div>
+<div class="scenario-time passed">ms: 21</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.3:18]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.3:18]bg">
+<div class="step-container" id="21">
+<div class="step-ref bg-step">21</div>
+<div class="step-cell passed">Given def testdata = read("testdata.csv")</div>
+</div>
+<div class="time-cell passed">13</div>
+</div>
+<div class="preformatted" data-parent="21">20:21:01.055 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">Given print '2234'</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="preformatted" data-parent="22">20:21:05.247 [print] 2234</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">When print 'son'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="23">20:21:05.250 [print] son</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">Then print 'employer'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="24">20:21:05.253 [print] employer</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-cell passed">And print '404'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="25">20:21:05.257 [print] 404</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+	"short_description": "Test incident creation through REST",
+	"comments": "These are my comments",
+	"description": "this text from data sheet",
+	"state": "1",
+	"category": "software",
+	"contact_type": "email",
+	"caller_id": "sekar",
+	"assigned_to": "gopi",
+	"work_notes": "home work",
+	"comments_and_work_notes": "Solved (Permanently)"
+}
+
