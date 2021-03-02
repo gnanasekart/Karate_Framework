@@ -10,13 +10,14 @@ import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import com.intuit.karate.Runner.Builder;
 
-public class ParallelRunnerSP {
-
+public class ParallelRunnerSP 
+{
 	private static final String CLASS_PATH = "classpath:";
+	private static final String DLIMITER = ",";
+
 	@Test
 	public void executeTest()
 	{
-
 		//		Runner.parallel(getClass(), 3);
 
 		Builder aRun = new Builder();
@@ -31,10 +32,10 @@ public class ParallelRunnerSP {
 		System.out.println("Total feature count = "+result.getFeatureCount());
 
 		Assertions.assertEquals(0, result.getFailCount(), "This scenario has failed cases");
-
 	}
 
-	private List<String> getTags(){
+	private List<String> getTags()
+	{
 		String atags = System.getProperty("tags", "@Smoke");
 		List<String> ataglist = Arrays.asList(atags);
 		System.out.println(ataglist);
@@ -42,7 +43,8 @@ public class ParallelRunnerSP {
 	}
 
 
-	private List<String> getLocation(){
+	private List<String> getLocation()
+	{
 		String aLocation = System.getProperty("location", "com/api/automation");
 		List<String> aLocationList = Arrays.asList(CLASS_PATH + aLocation);
 		System.out.println(aLocationList);
